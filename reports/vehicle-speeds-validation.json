@@ -1,0 +1,20 @@
+{
+  "configurations": 146,
+  "counts_by_file": {
+    "vehicles.xtbl": 130,
+    "dlc01_vehicles.xtbl": 16
+  },
+  "explicit_forward_limits": 133,
+  "missing_forward_limits": 13,
+  "misc_changed_forward": 62,
+  "misc_changed_reverse": 6,
+  "table_changed_forward": 0,
+  "explicit_ai_limits": 60,
+  "ai_limits_unchanged": true,
+  "source_sha256": {
+    "misc": "9dcd2d8311ccd03b65617659328479971fbc830d57175019591f97440004be58",
+    "table": "b15464c257faf1fc0f8005970f33896126cf7f43d73e7fe81b518c18a91c31c7"
+  },
+  "runtime_speed_measured": false,
+  "engine_load_precedence_verified": false
+}

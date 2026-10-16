@@ -1,0 +1,8 @@
+﻿file,vehicle_id,category,display_name,vehicle_class,group,original_forward_raw,original_forward_kmh,original_forward_mps,original_reverse_raw,original_reverse_kmh,original_reverse_mps,original_ai_raw,original_torque,original_min_rpm,original_max_rpm,misc_forward_raw,misc_forward_kmh,misc_forward_mps,misc_reverse_raw,misc_reverse_kmh,misc_reverse_mps,misc_ai_raw,misc_torque,misc_min_rpm,misc_max_rpm,table_forward_raw,table_forward_kmh,table_forward_mps,table_reverse_raw,table_reverse_kmh,table_reverse_mps,table_ai_raw,table_torque,table_min_rpm,table_max_rpm,misc_forward_ratio,table_forward_ratio
+vehicle_groups.xtbl,Tank,Entries,,,,,,,,,,,1000,800,5200,,,,,,,,1000,800,5200,,,,,,,,1000,800,5200,,
+vehicle_groups.xtbl,Flyer,Entries,,,,,,,,,,,1000,800,5200,,,,,,,,1000,800,5200,,,,,,,,1000,800,5200,,
+vehicle_groups.xtbl,Mech,Entries,,,,,,,,,,,1000,800,5200,,,,,,,,1000,800,5200,,,,,,,,1000,800,5200,,
+vehicle_groups.xtbl,Small,Entries,,,,60,96.56,26.82,,,,,300,1000,7500,60,96.56,26.82,,,,,300,1000,7500,60,96.56,26.82,,,,,300,1000,7500,1,1
+vehicle_groups.xtbl,Medium,Entries,,,,50,80.47,22.35,,,,,700,500,5000,50,80.47,22.35,,,,,700,500,5000,50,80.47,22.35,,,,,700,500,5000,1,1
+vehicle_groups.xtbl,Large,Entries,,,,45,72.42,20.12,,,,,1000,500,3000,45,72.42,20.12,,,,,1000,500,3000,45,72.42,20.12,,,,,1000,500,3000,1,1
+vehicle_defaults.xtbl,Vehicle Defaults,Entries,,,,90,144.84,40.23,35,56.33,15.65,,,1000,7500,90,144.84,40.23,35,56.33,15.65,,,1000,7500,90,144.84,40.23,35,56.33,15.65,,,1000,7500,1,1

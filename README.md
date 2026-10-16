@@ -7,6 +7,7 @@ Bản điều chỉnh Ultimate Mod cho **Red Faction Guerrilla Re-Mars-tered**, 
 - **[Tải bản mod (16,5 MiB)](https://github.com/ttgpPsychMH/RFGRM-UltimateModFixed/raw/refs/heads/main/downloads/Ultimate_Mod_Campaign_v2.zip)** — chứa cả `misc.vpp_pc`, `table.vpp_pc` và hướng dẫn.
 - [Tải báo cáo thay đổi và kiểm tra](https://github.com/ttgpPsychMH/RFGRM-UltimateModFixed/raw/refs/heads/main/downloads/Ultimate_Mod_Campaign_v2_Reports.zip).
 - [Đọc hướng dẫn đầy đủ](downloads/HUONG_DAN.txt) · [SHA-256](downloads/SHA256SUMS.txt).
+- [Bảng tốc độ toàn bộ 146 cấu hình xe: original và từng gói hiện tại](reports/vehicle-speeds.md) · [CSV](reports/vehicle-speeds.csv).
 
 ## Tiện ích nhảy cao ×2 / ×3 (thử nghiệm)
 
