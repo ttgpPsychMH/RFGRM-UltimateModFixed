@@ -11,8 +11,10 @@
   "table_changed_forward": 0,
   "explicit_ai_limits": 60,
   "ai_limits_unchanged": true,
+  "vehicle_speed_factor": "1.5",
+  "profile": "vehicle_comfort_1_5x",
   "source_sha256": {
-    "misc": "9dcd2d8311ccd03b65617659328479971fbc830d57175019591f97440004be58",
+    "misc": "50bc7ba3fe3e8c4d42bfc4c0a0dba1c6e373f762c75a068fe63a9a4898c45565",
     "table": "b15464c257faf1fc0f8005970f33896126cf7f43d73e7fe81b518c18a91c31c7"
   },
   "runtime_speed_measured": false,

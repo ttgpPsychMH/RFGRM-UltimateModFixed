@@ -1,4 +1,4 @@
-ULTIMATE MOD — BẢN ĐIỀU CHỈNH SPAWN /3, DI CHUYỂN 10 M/S
+ULTIMATE MOD — CAMPAIGN V3: TỐC ĐỘ/ĐỘNG CƠ XE X1,5
 Game: Red Faction Guerrilla Re-Mars-tered (offline)
 
 CÀI ĐẶT
@@ -11,6 +11,7 @@ CÀI ĐẶT
 QUY TẮC ÁP DỤNG
 Mọi hệ số bên dưới đều tính từ ORIGINAL, không tính từ bản mod trước.
 Hai gói giữ phạm vi chỉnh sửa riêng; không đồng nhất tất cả dữ liệu giữa chúng.
+Bản V3 chỉ giảm tốc độ/động cơ xe; không giảm HP xe hay các nhóm khác.
 Chỉ chỉnh tham số vốn được mod thay đổi, cùng các ngoại lệ búa và trường
 giới hạn liên quan đã được cho phép. 105 trường bán kính nổ liên quan được
 đưa về cùng hệ số với bán kính chính để giữ tỷ lệ vùng tác động gốc.
@@ -25,7 +26,10 @@ giới hạn liên quan đã được cho phép. 105 trường bán kính nổ l
   Giữ HP gốc x10, sát thương tới người chơi /20 ở từng tham số đã chốt,
   chấp nhận các hệ số giảm sát thương có thể cộng dồn.
 - Máu NPC: đồng minh/dân thường x5; EDF/Marauder x3 như đã thống nhất.
-- Xe: các thông số tốc độ, mô-men xoắn và RPM được chọn x3; HP xe x5.
+- Xe: chỉ các giới hạn tốc độ tiến/lùi và mô-men xoắn/RPM đã được chọn
+  được giảm về x1,5 ORIGINAL. HP xe vẫn x5 như bản trước; các thông số
+  khác giữ nguyên. Không phải tất cả xe đều được đổi: giữ phạm vi riêng
+  của từng gói và các trường chưa bị mod sửa.
   Các trường bảo vệ người chơi khi ở trong xe giữ nguyên.
 - Nổ: bán kính/vùng tác động được chọn x3; sát thương phá hủy/xe/NPC
   được chọn x5. Sát thương tới người chơi tiếp tục được giữ giảm như trước.
@@ -58,8 +62,10 @@ NHỮNG ĐIỂM CẦN BIẾT KHI CHƠI
   còn tùy trạng thái chạy, hoạt ảnh và cơ chế game.
 - Spawn /3 rút ngắn chờ đợi nhưng có thể làm nhiều đợt quân cùng tồn tại hơn,
   tăng giao tranh và tải CPU nếu các đợt trước chưa được xử lý.
-- Xe x3 vẫn rất nhanh. Ví dụ một cấu hình gốc 52 mph sẽ thành 156 mph
-  (khoảng 251 km/h); tốc độ thực tế còn tùy động cơ, mặt đường và va chạm.
+- Xe được chọn x1,5: ví dụ cấu hình gốc 52 mph thành 78 mph
+  (khoảng 125,53 km/h). Đây là giới hạn trong dữ liệu; tốc độ thực tế còn
+  tùy động cơ, mặt đường, số truyền và va chạm. table.vpp_pc giữ nguyên
+  từng byte từ Campaign v2; chưa xác nhận thứ tự game ưu tiên nạp hai gói.
 - Nhiều thông số nhân/chia có tác động cộng dồn. Gauss EDF có NPC_Damage
   95/115 -> 475/575, thời gian bắn lại 250 -> 84 ms: DPS lý thuyết gần
   14.9 lần gốc nếu bắn liên tục, chưa tính giới hạn hoạt ảnh/AI/nạp đạn.
@@ -78,8 +84,10 @@ KIỂM TRA ĐÃ THỰC HIỆN
 - misc: 1208 tệp; table: 423 tệp; không thêm/xóa tệp con.
 - Đọc cấu trúc VPP bằng bộ kiểm tra độc lập, kiểm tra offset, độ dài,
   hash tên, padding; giải nén lại và đối chiếu toàn bộ payload.
-- Kiểm tra 1241 giá trị đổi so với bản 10 m/s trước đó, công thức từ gốc,
-  1075 giá trị giữ nguyên, 128 trường spawn và các cặp min/max liên quan.
+- Kiểm tra 349 giá trị đổi so với Campaign v2, đều bằng 1,5 lần ORIGINAL;
+  1967 giá trị đã kiểm kê khác giữ nguyên. Chỉ vehicles.xtbl bên trong
+  misc.vpp_pc thay đổi; các tệp con khác và toàn bộ table.vpp_pc giữ nguyên.
+  Kiểm tra không có vi phạm min/max mới trong các cặp liên quan.
 - Mỗi gói có 422/423 XTBL qua kiểm tra cú pháp XML. credits.xtbl còn một
   ký tự không hợp lệ đã tồn tại trong ORIGINAL; được giữ nguyên từng byte.
   Tất cả tài liệu thực sự sửa trong bản này đều qua kiểm tra XML.
@@ -88,7 +96,7 @@ KIỂM TRA ĐÃ THỰC HIỆN
 
 SHA-256 CỦA FILE GAME
 misc.vpp_pc:
-9dcd2d8311ccd03b65617659328479971fbc830d57175019591f97440004be58
+50bc7ba3fe3e8c4d42bfc4c0a0dba1c6e373f762c75a068fe63a9a4898c45565
 table.vpp_pc:
 b15464c257faf1fc0f8005970f33896126cf7f43d73e7fe81b518c18a91c31c7
 
