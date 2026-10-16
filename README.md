@@ -8,6 +8,12 @@ Bản điều chỉnh Ultimate Mod cho **Red Faction Guerrilla Re-Mars-tered**, 
 - [Tải báo cáo thay đổi và kiểm tra](https://github.com/ttgpPsychMH/RFGRM-UltimateModFixed/raw/refs/heads/main/downloads/Ultimate_Mod_Campaign_v2_Reports.zip).
 - [Đọc hướng dẫn đầy đủ](downloads/HUONG_DAN.txt) · [SHA-256](downloads/SHA256SUMS.txt).
 
+## Tiện ích nhảy cao ×2 / ×3 (thử nghiệm)
+
+**[Tải tiện ích nhảy cao](https://github.com/ttgpPsychMH/RFGRM-UltimateModFixed/raw/refs/heads/main/downloads/RFGRM_Jump_RSL_Experimental.zip)** · [Hướng dẫn cài và sử dụng](jump-addon/README.md).
+
+Cần cài thêm **RSL 1** tương thích với game. Mặc định nhân trường độ cao nhảy của người chơi ×2; có thể chọn ×3 hoặc trả về mốc đã lưu. Dùng cùng Campaign v2, không cần thay hai VPP. Đã kiểm tra logic Lua bằng mô phỏng; **chưa xác nhận độ cao thực tế trong game**.
+
 ## Thiết lập chính
 
 Các hệ số đều tính từ dữ liệu game gốc, chỉ áp dụng trong phạm vi tham số đã được chọn của từng gói cùng các ngoại lệ liên quan.
