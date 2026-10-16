@@ -1,0 +1,96 @@
+ULTIMATE MOD — BẢN ĐIỀU CHỈNH SPAWN /3, DI CHUYỂN 10 M/S
+Game: Red Faction Guerrilla Re-Mars-tered (offline)
+
+CÀI ĐẶT
+1. Thoát game. Sao lưu hai file misc.vpp_pc và table.vpp_pc đang dùng.
+2. Giải nén ZIP này. Chép cả misc.vpp_pc và table.vpp_pc vào thư mục game
+   chứa hai file cùng tên và thay thế chúng.
+3. Đây là hai gói đầy đủ; không cần cài chồng các bản ZIP trước đó.
+4. Muốn hoàn tác: thoát game và chép lại hai file đã sao lưu.
+
+QUY TẮC ÁP DỤNG
+Mọi hệ số bên dưới đều tính từ ORIGINAL, không tính từ bản mod trước.
+Hai gói giữ phạm vi chỉnh sửa riêng; không đồng nhất tất cả dữ liệu giữa chúng.
+Chỉ chỉnh tham số vốn được mod thay đổi, cùng các ngoại lệ búa và trường
+giới hạn liên quan đã được cho phép. 105 trường bán kính nổ liên quan được
+đưa về cùng hệ số với bán kính chính để giữ tỷ lệ vùng tác động gốc.
+
+- Spawn: 128 trường thời gian gọi quân đã bị mod sửa được chia 3.
+  Áp dụng cho cả quân địch và viện binh đồng minh trong phạm vi này.
+  Ví dụ 30 giây -> 10; 60 -> 20; 190 -> 64.
+  Trường số nguyên làm tròn lên; không tạo thời gian nhỏ hơn bằng làm tròn xuống.
+  Không tăng số quân mỗi đợt và không tự sửa các thời gian nguyên bản chưa bị mod sửa.
+- Nhân vật chính: giữ tốc độ tối đa cấu hình 10 m/s và các thiết lập bảo vệ
+  người chơi của bản trước: máu, giảm sát thương, hồi phục và chống chịu.
+  Giữ HP gốc x10, sát thương tới người chơi /20 ở từng tham số đã chốt,
+  chấp nhận các hệ số giảm sát thương có thể cộng dồn.
+- Máu NPC: đồng minh/dân thường x5; EDF/Marauder x3 như đã thống nhất.
+- Xe: các thông số tốc độ, mô-men xoắn và RPM được chọn x3; HP xe x5.
+  Các trường bảo vệ người chơi khi ở trong xe giữ nguyên.
+- Nổ: bán kính/vùng tác động được chọn x3; sát thương phá hủy/xe/NPC
+  được chọn x5. Sát thương tới người chơi tiếp tục được giữ giảm như trước.
+- Súng: sát thương NPC/xe và lượng đạn được chọn x5; thời gian bắn lại,
+  nạp và nguội được chọn /3; tầm bắn/tốc độ đạn được chọn x3;
+  độ giật/độ tản/nhiệt mỗi phát được chọn /5.
+  Đây là các trường đã được mod sửa và các giới hạn liên quan, không phải
+  tất cả thông số của tất cả vũ khí. Ngoại lệ búa được ưu tiên như dưới đây.
+- Nhiệm vụ: thời gian được chọn x3; phần thưởng/đạn/HP xe mục tiêu x5;
+  các yêu cầu số lượng và tốc độ thoát của courier được chọn /3.
+- Vehicle_Health trong timed delivery là tỷ lệ 0..1: giới hạn tối đa 1
+  (100% máu), không đặt thành 5 hay 10. Vehicle_Hit_Points riêng vẫn x5.
+- Chi phí nâng cấp được chọn /3. Các thay đổi không phải số, cờ đạn vô hạn,
+  loại vũ khí/NPC, giá trị gốc 0 hoặc âm không phù hợp để nhân chia giữ như mod.
+
+BÚA GIỮ NGUYÊN THỎA THUẬN RIÊNG
+- Búa thường: sát thương gốc từng trường x50.
+- Nâng cấp: sát thương gốc riêng từng bản x20.
+- Búa vàng: sát thương gốc riêng từng trường x100.
+- Ví dụ DefaultDamage của đòn đứng/ngang trong AnimSet Player.xtbl:
+  thường 1500 -> 75000; nâng cấp 1: 2000 -> 40000;
+  nâng cấp 2: 2500 -> 50000; vàng 5000 -> 500000.
+- Nâng cấp có thể yếu hơn búa thường; đây là kết quả đã được người dùng chấp thuận.
+- Giữ các liên kết đòn búa vàng và khôi phục NPC_Damage của vũ khí búa về 0
+  để dữ liệu sát thương melee riêng được sử dụng theo cấu hình đã chọn.
+- Các trường sát thương búa tới người chơi vẫn giữ quy tắc giảm trước đó.
+
+NHỮNG ĐIỂM CẦN BIẾT KHI CHƠI
+- 10 m/s là tốc độ tối đa trong dữ liệu, gấp đôi 5 m/s gốc; tốc độ thực tế
+  còn tùy trạng thái chạy, hoạt ảnh và cơ chế game.
+- Spawn /3 rút ngắn chờ đợi nhưng có thể làm nhiều đợt quân cùng tồn tại hơn,
+  tăng giao tranh và tải CPU nếu các đợt trước chưa được xử lý.
+- Xe x3 vẫn rất nhanh. Ví dụ một cấu hình gốc 52 mph sẽ thành 156 mph
+  (khoảng 251 km/h); tốc độ thực tế còn tùy động cơ, mặt đường và va chạm.
+- Nhiều thông số nhân/chia có tác động cộng dồn. Gauss EDF có NPC_Damage
+  95/115 -> 475/575, thời gian bắn lại 250 -> 84 ms: DPS lý thuyết gần
+  14.9 lần gốc nếu bắn liên tục, chưa tính giới hạn hoạt ảnh/AI/nạp đạn.
+  Đây đã giảm nhiều so với cấu hình trước 1900/2300 và 13 ms.
+- Thay đổi vũ khí trang bị cho NPC của Nexus mod vẫn được giữ. Một trường
+  NPC_Damage dùng chung không chỉ tăng sức mạnh của nhân vật chính.
+  Nếu cơ chế friendly fire cho phép, đồng minh hoặc mục tiêu hộ tống vẫn
+  có thể bị hại; bảo vệ nhân vật chính không bảo vệ mọi mục tiêu nhiệm vụ.
+- Bán kính remote charge: 3 -> 9 m; các vùng Crumble/Knockdown/Flinch
+  lần lượt 11.25 / 16.5 / 27 m. Phá hủy và búa vẫn rất mạnh, có thể phá
+  vật thể, xe hoặc mục tiêu cần bảo vệ trong nhiệm vụ.
+- Các gói còn chứa các thiết lập trùng nhau với giá trị riêng của mod.
+  Chưa xác nhận thứ tự game ưu tiên nạp chúng trong mọi chế độ chơi.
+
+KIỂM TRA ĐÃ THỰC HIỆN
+- misc: 1208 tệp; table: 423 tệp; không thêm/xóa tệp con.
+- Đọc cấu trúc VPP bằng bộ kiểm tra độc lập, kiểm tra offset, độ dài,
+  hash tên, padding; giải nén lại và đối chiếu toàn bộ payload.
+- Kiểm tra 1241 giá trị đổi so với bản 10 m/s trước đó, công thức từ gốc,
+  1075 giá trị giữ nguyên, 128 trường spawn và các cặp min/max liên quan.
+- Mỗi gói có 422/423 XTBL qua kiểm tra cú pháp XML. credits.xtbl còn một
+  ký tự không hợp lệ đã tồn tại trong ORIGINAL; được giữ nguyên từng byte.
+  Tất cả tài liệu thực sự sửa trong bản này đều qua kiểm tra XML.
+- Chưa chạy thử trong game; kiểm tra dữ liệu không xác nhận FPS, AI,
+  cảm giác điều khiển, mọi nhiệm vụ hoặc hành vi vật lý của engine.
+
+SHA-256 CỦA FILE GAME
+misc.vpp_pc:
+9dcd2d8311ccd03b65617659328479971fbc830d57175019591f97440004be58
+table.vpp_pc:
+b15464c257faf1fc0f8005970f33896126cf7f43d73e7fe81b518c18a91c31c7
+
+ZIP báo cáo riêng có parameters.csv/json (gốc, mod, bản trước, kết quả,
+quy tắc), files.csv, validation.json và mã tạo/kiểm tra bản điều chỉnh.
