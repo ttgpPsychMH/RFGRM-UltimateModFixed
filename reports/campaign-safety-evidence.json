@@ -1,0 +1,3873 @@
+{
+  "profile": "Campaign v3 — vehicle speed/engine x1.5",
+  "game_runtime_tested": false,
+  "packages": {
+    "misc": {
+      "file_count": 1208,
+      "sha256": "50bc7ba3fe3e8c4d42bfc4c0a0dba1c6e373f762c75a068fe63a9a4898c45565",
+      "changed_files": [
+        "activity_air_strike_defense.xtbl",
+        "activity_area_defense.xtbl",
+        "activity_courier_chase.xtbl",
+        "activity_demolitions_master.xtbl",
+        "activity_house_arrest.xtbl",
+        "activity_timed_delivery.xtbl",
+        "character.xtbl",
+        "difficulty.xtbl",
+        "explosions.xtbl",
+        "melee.xtbl",
+        "raid_data.xtbl",
+        "spawn_group_vehicle.xtbl",
+        "tweak_table.xtbl",
+        "vehicles.xtbl",
+        "weapons.xtbl"
+      ],
+      "xml_valid": 422,
+      "unchanged_original_xml_exceptions": {
+        "credits.xtbl": "not well-formed (invalid token): line 41, column 21"
+      },
+      "binary_assets_changed": 0,
+      "modified_values": 1936,
+      "added_value_paths": 0,
+      "removed_value_paths": 7
+    },
+    "table": {
+      "file_count": 423,
+      "sha256": "b15464c257faf1fc0f8005970f33896126cf7f43d73e7fe81b518c18a91c31c7",
+      "changed_files": [
+        "activity_house_arrest.xtbl",
+        "activity_timed_delivery.xtbl",
+        "character.xtbl",
+        "difficulty.xtbl",
+        "explosions.xtbl",
+        "melee.xtbl",
+        "weapons.xtbl"
+      ],
+      "xml_valid": 422,
+      "unchanged_original_xml_exceptions": {
+        "credits.xtbl": "not well-formed (invalid token): line 41, column 21"
+      },
+      "binary_assets_changed": 0,
+      "modified_values": 368,
+      "added_value_paths": 1,
+      "removed_value_paths": 16
+    }
+  },
+  "catalog_check_scope": "Definitions in the supplied base/DLC XTBL tables; no live game symbol resolution.",
+  "findings": {
+    "new_references_absent_from_supplied_catalogs": [
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_04][Category=Dust][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_06][Category=Oasis][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_06][Category=Oasis][1]/reinforcement_list[1]/reinforcement_data[2]/squad_def[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_08][Category=Oasis][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "character.xtbl",
+        "path": "/root/Table[1]/Character[Name=Dustin_Oasis][Category=Entries:Guerilla:Oasis][1]/Inventory[1]/Item[1]/Item_Name[1]",
+        "kind": "weapon",
+        "original": "m16",
+        "current": "m1gauss_rifle6",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_02_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_12",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_02_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_12",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_02_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_12",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_02_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_12",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_02_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_4",
+        "current": "basic_squad_12",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_02_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_12",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_02_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_4",
+        "current": "basic_squad_12",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_03_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_12",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_03_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_12",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_03_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_12",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_03_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_12",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_03_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_12",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_01_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "kind": "squad",
+        "original": "guerilla_squad_4",
+        "current": "guerilla_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_01_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_4",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_01_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "kind": "squad",
+        "original": "guerilla_squad_4",
+        "current": "guerilla_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_01_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_01_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_4",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_02_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "kind": "squad",
+        "original": "guerilla_squad_2",
+        "current": "guerilla_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_02_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "kind": "squad",
+        "original": "guerilla_squad_2",
+        "current": "guerilla_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_02_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "kind": "squad",
+        "original": "guerilla_squad_2",
+        "current": "guerilla_squad_8",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_02_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "kind": "squad",
+        "original": "guerilla_squad_2",
+        "current": "guerilla_squad_8",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_03_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "kind": "squad",
+        "original": "guerilla_squad_4",
+        "current": "guerilla_squad_8",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_05_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_7",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_04_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_04_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_04_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_04_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_04_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[7]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_04_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[8]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_07_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[5]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_4",
+        "current": "basic_squad_",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_09_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_09_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_09_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[5]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_09_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_09_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_09_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_09_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[5]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_11_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_11_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_11_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_11_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_11_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_11_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_11_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[5]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_11_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[6]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_11_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[7]/SquadType[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "spawn_group_vehicle.xtbl",
+        "path": "/root/Table[1]/spawn_group_vehicle[Name=Amb_Raids_Eos][Category=Entries:Activities][1]/vehicle_list[1]/vehicle_type[1]",
+        "kind": "vehicle",
+        "original": "Min_Rover-A_1",
+        "current": "Min_ATV_MG3-A_3",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "spawn_group_vehicle.xtbl",
+        "path": "/root/Table[1]/spawn_group_vehicle[Name=Amb_Raids_Eos][Category=Entries:Activities][1]/vehicle_list[1]/vehicle_type[2]",
+        "kind": "vehicle",
+        "original": "Col_Taxi_1",
+        "current": "Min_ATV_MG3-A_3",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "spawn_group_vehicle.xtbl",
+        "path": "/root/Table[1]/spawn_group_vehicle[Name=Amb_Raids_Eos][Category=Entries:Activities][1]/vehicle_list[1]/vehicle_type[3]",
+        "kind": "vehicle",
+        "original": "Min_Emergency_1",
+        "current": "Min_ATV_MG3-A_3",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "spawn_group_vehicle.xtbl",
+        "path": "/root/Table[1]/spawn_group_vehicle[Name=Amb_Raids_Eos][Category=Entries:Activities][1]/vehicle_list[1]/vehicle_type[4]",
+        "kind": "vehicle",
+        "original": "Min_SupplyTruck_1",
+        "current": "Min_ATV_MG3-A_3",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "spawn_group_vehicle.xtbl",
+        "path": "/root/Table[1]/spawn_group_vehicle[Name=Amb_Raids_Eos][Category=Entries:Activities][1]/vehicle_list[1]/vehicle_type[5]",
+        "kind": "vehicle",
+        "original": "Col_Caravan_1",
+        "current": "Min_ATV_MG3-A_3",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "spawn_group_vehicle.xtbl",
+        "path": "/root/Table[1]/spawn_group_vehicle[Name=Amb_Raids_Eos][Category=Entries:Activities][1]/vehicle_list[1]/vehicle_type[6]",
+        "kind": "vehicle",
+        "original": "Min_Rover-A_2",
+        "current": "Min_ATV_MG3-A_2",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "spawn_group_vehicle.xtbl",
+        "path": "/root/Table[1]/spawn_group_vehicle[Name=Amb_Raids_Oasis][Category=Entries:Activities][1]/vehicle_list[1]/vehicle_type[1]",
+        "kind": "vehicle",
+        "original": "Min_Emergency_1",
+        "current": "Min_ATV_MG3-A_3",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "spawn_group_vehicle.xtbl",
+        "path": "/root/Table[1]/spawn_group_vehicle[Name=Amb_Raids_Oasis][Category=Entries:Activities][1]/vehicle_list[1]/vehicle_type[2]",
+        "kind": "vehicle",
+        "original": "Col_Taxi_1",
+        "current": "Min_ATV_MG3-A_3",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "spawn_group_vehicle.xtbl",
+        "path": "/root/Table[1]/spawn_group_vehicle[Name=Amb_Raids_Oasis][Category=Entries:Activities][1]/vehicle_list[1]/vehicle_type[3]",
+        "kind": "vehicle",
+        "original": "Col_Taxi_2",
+        "current": "Min_ATV_MG3-A_3",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "spawn_group_vehicle.xtbl",
+        "path": "/root/Table[1]/spawn_group_vehicle[Name=Amb_Raids_Dust][Category=Entries:Activities][1]/vehicle_list[1]/vehicle_type[6]",
+        "kind": "vehicle",
+        "original": "Min_SupplyTruck_2",
+        "current": "Min_ATV_MG3-A_3",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "spawn_group_vehicle.xtbl",
+        "path": "/root/Table[1]/spawn_group_vehicle[Name=Amb_Raids_Dust][Category=Entries:Activities][1]/vehicle_list[1]/vehicle_type[7]",
+        "kind": "vehicle",
+        "original": "Min_SupplyTruck_3",
+        "current": "Min_ATV_MG3-A_3",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "spawn_group_vehicle.xtbl",
+        "path": "/root/Table[1]/spawn_group_vehicle[Name=Amb_Raids_Dust][Category=Entries:Activities][1]/vehicle_list[1]/vehicle_type[8]",
+        "kind": "vehicle",
+        "original": "Min_DumpTruck_2",
+        "current": "Min_ATV_MG3-A_3",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "misc",
+        "file": "spawn_group_vehicle.xtbl",
+        "path": "/root/Table[1]/spawn_group_vehicle[Name=Amb_Raids_Dust][Category=Entries:Activities][1]/vehicle_list[1]/vehicle_type[9]",
+        "kind": "vehicle",
+        "original": "Min_DumpTruck_3",
+        "current": "Min_ATV_MG3-A_3",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_04][Category=Dust][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_06][Category=Oasis][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_06][Category=Oasis][1]/reinforcement_list[1]/reinforcement_data[2]/squad_def[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_08][Category=Oasis][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_15][Category=Eos][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "kind": "squad",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "inherited_from_nexus": true
+      }
+    ],
+    "unresolved_reference_counts": {
+      "misc/squad": 50,
+      "misc/weapon": 1,
+      "misc/vehicle": 13,
+      "table/squad": 5
+    },
+    "squad_reference_changes": [
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_05][Category=Oasis][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_05][Category=Oasis][1]/reinforcement_list[1]/reinforcement_data[2]/squad_def[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_01][Category=Dust][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_6",
+        "current": "basic_squad_8",
+        "original_members": 6,
+        "current_members": 8
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_02][Category=Dust][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_02][Category=Dust][1]/reinforcement_list[1]/reinforcement_data[2]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_03][Category=Dust][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_03][Category=Dust][1]/reinforcement_list[1]/reinforcement_data[2]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_03][Category=Dust][1]/reinforcement_list[1]/reinforcement_data[3]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_03][Category=Dust][1]/reinforcement_list[1]/reinforcement_data[4]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_04][Category=Dust][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_04][Category=Dust][1]/reinforcement_list[1]/reinforcement_data[2]/squad_def[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_8",
+        "original_members": 4,
+        "current_members": 8
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=default][Category=Entries][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=default][Category=Entries][1]/reinforcement_list[1]/reinforcement_data[2]/squad_def[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_06][Category=Oasis][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_06][Category=Oasis][1]/reinforcement_list[1]/reinforcement_data[2]/squad_def[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_08][Category=Oasis][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_09][Category=Dust][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_09][Category=Dust][1]/reinforcement_list[1]/reinforcement_data[2]/squad_def[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_09][Category=Dust][1]/reinforcement_list[1]/reinforcement_data[3]/squad_def[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_10][Category=Parker][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_11][Category=Parker][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_12][Category=Eos][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_12][Category=Eos][1]/reinforcement_list[1]/reinforcement_data[2]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_12][Category=Eos][1]/reinforcement_list[1]/reinforcement_data[3]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_13][Category=Eos][1]/reinforcement_list[1]/reinforcement_data[4]/squad_def[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_3",
+        "original_members": 1,
+        "current_members": 3
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_13][Category=Eos][1]/reinforcement_list[1]/reinforcement_data[5]/squad_def[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_3",
+        "original_members": 1,
+        "current_members": 3
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_14][Category=Eos][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_14][Category=Eos][1]/reinforcement_list[1]/reinforcement_data[2]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_6",
+        "original_members": 2,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_14][Category=Eos][1]/reinforcement_list[1]/reinforcement_data[3]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_6",
+        "original_members": 2,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_14][Category=Eos][1]/reinforcement_list[1]/reinforcement_data[4]/squad_def[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_3",
+        "original_members": 1,
+        "current_members": 3
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_14][Category=Eos][1]/reinforcement_list[1]/reinforcement_data[5]/squad_def[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_3",
+        "original_members": 1,
+        "current_members": 3
+      },
+      {
+        "package": "misc",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_15][Category=Eos][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_4",
+        "original_members": 8,
+        "current_members": 4
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_02_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_12",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_02_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_12",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_02_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_12",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_02_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_12",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_02_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_12",
+        "original_members": 4,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_02_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_12",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_02_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_12",
+        "original_members": 4,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_03_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_12",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_03_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_12",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_03_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_12",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_03_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_12",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_03_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_12",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_01_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "guerilla_squad_4",
+        "current": "guerilla_squad_10",
+        "original_members": 4,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_01_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_10",
+        "original_members": 4,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_01_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "guerilla_squad_4",
+        "current": "guerilla_squad_10",
+        "original_members": 4,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_01_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_01_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_10",
+        "original_members": 4,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_02_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "guerilla_squad_2",
+        "current": "guerilla_squad_10",
+        "original_members": 2,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_02_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "guerilla_squad_2",
+        "current": "guerilla_squad_10",
+        "original_members": 2,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_02_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_8",
+        "original_members": 4,
+        "current_members": 8
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_02_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_8",
+        "original_members": 4,
+        "current_members": 8
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_02_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "guerilla_squad_2",
+        "current": "guerilla_squad_8",
+        "original_members": 2,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_02_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "original": "guerilla_squad_2",
+        "current": "guerilla_squad_8",
+        "original_members": 2,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_03_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "guerilla_squad_2",
+        "current": "guerilla_squad_6",
+        "original_members": 2,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_03_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "guerilla_squad_2",
+        "current": "guerilla_squad_6",
+        "original_members": 2,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_03_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "guerilla_squad_2",
+        "current": "guerilla_squad_6",
+        "original_members": 2,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_03_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_8",
+        "original_members": 2,
+        "current_members": 8
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_03_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "guerilla_squad_4",
+        "current": "guerilla_squad_8",
+        "original_members": 4,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_03_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_8",
+        "original_members": 2,
+        "current_members": 8
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_04_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_8",
+        "original_members": 4,
+        "current_members": 8
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_04_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_8",
+        "original_members": 4,
+        "current_members": 8
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_04_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_8",
+        "original_members": 2,
+        "current_members": 8
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_04_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_8",
+        "original_members": 4,
+        "current_members": 8
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_04_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_6",
+        "original_members": 2,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_04_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_05_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "basic_squad_7",
+        "current": "basic_squad_10",
+        "original_members": 7,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_05_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_8",
+        "original_members": 4,
+        "current_members": 8
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_05_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "guerilla_squad_4",
+        "current": "guerilla_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_05_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_05_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_05_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_05_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "original": "guerilla_squad_4",
+        "current": "guerilla_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_06_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_06_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=Default_Guerilla][Category=Entries][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=Default_Guerilla][Category=Entries][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "guerilla_squad_2",
+        "current": "guerilla_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=Default_Guerilla][Category=Entries][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "guerilla_squad_2",
+        "current": "guerilla_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=Default_EDF][Category=Entries][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=Default_EDF][Category=Entries][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_6",
+        "original_members": 2,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=Default_EDF][Category=Entries][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "guerilla_squad_2",
+        "current": "guerilla_squad_6",
+        "original_members": 2,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=Default_EDF][Category=Entries][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "original": "guerilla_squad_2",
+        "current": "guerilla_squad_6",
+        "original_members": 2,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_06_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_06_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_06_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_07_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "guerilla_squad_4",
+        "current": "guerilla_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_07_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "guerilla_squad_4",
+        "current": "guerilla_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_07_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_07_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "guerilla_squad_4",
+        "current": "guerilla_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_07_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "guerilla_squad_4",
+        "current": "guerilla_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_07_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_07_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_07_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[5]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_08_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "guerilla_squad_4",
+        "current": "guerilla_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_08_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "guerilla_squad_4",
+        "current": "guerilla_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_08_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_08_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_09_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "guerilla_squad_4",
+        "current": "guerilla_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_09_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "guerilla_squad_4",
+        "current": "guerilla_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_09_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "guerilla_squad_4",
+        "current": "guerilla_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_09_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_2",
+        "original_members": 1,
+        "current_members": 2
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_09_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[5]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_2",
+        "original_members": 1,
+        "current_members": 2
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_09_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[6]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_2",
+        "original_members": 1,
+        "current_members": 2
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_09_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[7]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_2",
+        "original_members": 1,
+        "current_members": 2
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_09_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[8]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_2",
+        "original_members": 1,
+        "current_members": 2
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_09_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[9]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_2",
+        "original_members": 1,
+        "current_members": 2
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_09_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "guerilla_squad_4",
+        "current": "guerilla_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_09_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "guerilla_squad_4",
+        "current": "guerilla_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_09_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_2",
+        "original_members": 1,
+        "current_members": 2
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_09_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_2",
+        "original_members": 1,
+        "current_members": 2
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_09_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[5]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_2",
+        "original_members": 1,
+        "current_members": 2
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_09_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[6]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_2",
+        "original_members": 1,
+        "current_members": 2
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_09_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[7]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_2",
+        "original_members": 1,
+        "current_members": 2
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_09_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[8]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_2",
+        "original_members": 1,
+        "current_members": 2
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_04_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_04_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_04_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_04_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_04_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[5]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_4",
+        "original_members": 1,
+        "current_members": 4
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_04_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[6]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_4",
+        "original_members": 1,
+        "current_members": 4
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_04_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[7]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_04_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[8]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_05_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_05_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_05_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_05_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_05_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[5]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_06_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_06_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_06_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_06_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_07_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_07_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_07_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_07_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[5]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_3",
+        "original_members": 1,
+        "current_members": 3
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_07_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[6]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_3",
+        "original_members": 4,
+        "current_members": 3
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_07_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[7]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_8",
+        "original_members": 4,
+        "current_members": 8
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_07_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_07_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_07_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_07_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_07_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[5]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_",
+        "original_members": 4,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_07_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[6]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_07_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[7]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_2",
+        "original_members": 1,
+        "current_members": 2
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_07_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[8]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_2",
+        "original_members": 1,
+        "current_members": 2
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_08_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_08_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_08_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_08_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_08_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[5]/SquadType[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_08_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "basic_squad_3",
+        "current": "basic_squad_5",
+        "original_members": 3,
+        "current_members": 5
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_08_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_3",
+        "current": "basic_squad_5",
+        "original_members": 3,
+        "current_members": 5
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_08_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_3",
+        "current": "basic_squad_5",
+        "original_members": 3,
+        "current_members": 5
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_08_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_08_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[5]/SquadType[1]",
+        "original": "basic_squad_3",
+        "current": "basic_squad_5",
+        "original_members": 3,
+        "current_members": 5
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_08_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[6]/SquadType[1]",
+        "original": "basic_squad_3",
+        "current": "basic_squad_5",
+        "original_members": 3,
+        "current_members": 5
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_09_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_09_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_3",
+        "original_members": 1,
+        "current_members": 3
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_09_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_09_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[5]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_09_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_09_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_09_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_2",
+        "original_members": 1,
+        "current_members": 2
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_09_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_09_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[5]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_09_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[6]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_3",
+        "original_members": 1,
+        "current_members": 3
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_10_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_10_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_10_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_10_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_10_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[5]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_10_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[6]/SquadType[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_10_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[7]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_2",
+        "original_members": 1,
+        "current_members": 2
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_10_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[8]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_2",
+        "original_members": 1,
+        "current_members": 2
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_11_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_11_level_1][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_10_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_10_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_10_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[5]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_2",
+        "original_members": 1,
+        "current_members": 2
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_10_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[6]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_2",
+        "original_members": 1,
+        "current_members": 2
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_10_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[7]/SquadType[1]",
+        "original": "guerilla_squad_4",
+        "current": "guerilla_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_10_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_2",
+        "original_members": 1,
+        "current_members": 2
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_10_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_10_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_10_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[5]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_2",
+        "original_members": 1,
+        "current_members": 2
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_10_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[7]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_10_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[8]/SquadType[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_11_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_3",
+        "original_members": 1,
+        "current_members": 3
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_11_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_3",
+        "original_members": 1,
+        "current_members": 3
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_11_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_3",
+        "original_members": 1,
+        "current_members": 3
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_11_level_1][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_3",
+        "original_members": 1,
+        "current_members": 3
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_11_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_3",
+        "original_members": 1,
+        "current_members": 3
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_11_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_3",
+        "original_members": 1,
+        "current_members": 3
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_11_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_3",
+        "original_members": 1,
+        "current_members": 3
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_11_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_3",
+        "original_members": 1,
+        "current_members": 3
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_11_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[5]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_3",
+        "original_members": 1,
+        "current_members": 3
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_ro_11_level_2][Category=OffensiveRaids][1]/SquadList[1]/SquadDefinition[6]/SquadType[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_3",
+        "original_members": 1,
+        "current_members": 3
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_11_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[1]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_11_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[2]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_11_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[3]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_11_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[4]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_11_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[5]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_11_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[6]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "misc",
+        "file": "raid_data.xtbl",
+        "path": "/root/Table[1]/RaidData[Name=je_rd_11_level_2][Category=DefensiveRaids][1]/SquadList[1]/SquadDefinition[7]/SquadType[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_05][Category=Oasis][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_05][Category=Oasis][1]/reinforcement_list[1]/reinforcement_data[2]/squad_def[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_01][Category=Dust][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_6",
+        "current": "basic_squad_8",
+        "original_members": 6,
+        "current_members": 8
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_02][Category=Dust][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_02][Category=Dust][1]/reinforcement_list[1]/reinforcement_data[2]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_03][Category=Dust][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_03][Category=Dust][1]/reinforcement_list[1]/reinforcement_data[2]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_03][Category=Dust][1]/reinforcement_list[1]/reinforcement_data[3]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_03][Category=Dust][1]/reinforcement_list[1]/reinforcement_data[4]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_04][Category=Dust][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_04][Category=Dust][1]/reinforcement_list[1]/reinforcement_data[2]/squad_def[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=default][Category=Entries][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=default][Category=Entries][1]/reinforcement_list[1]/reinforcement_data[2]/squad_def[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_06][Category=Oasis][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_06][Category=Oasis][1]/reinforcement_list[1]/reinforcement_data[2]/squad_def[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_08][Category=Oasis][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_09][Category=Dust][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_09][Category=Dust][1]/reinforcement_list[1]/reinforcement_data[2]/squad_def[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_09][Category=Dust][1]/reinforcement_list[1]/reinforcement_data[3]/squad_def[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_10][Category=Parker][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_11][Category=Parker][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_12][Category=Eos][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_12][Category=Eos][1]/reinforcement_list[1]/reinforcement_data[2]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_12][Category=Eos][1]/reinforcement_list[1]/reinforcement_data[3]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_4",
+        "original_members": 2,
+        "current_members": 4
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_12][Category=Eos][1]/reinforcement_list[1]/reinforcement_data[4]/squad_def[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_13][Category=Eos][1]/reinforcement_list[1]/reinforcement_data[2]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_6",
+        "original_members": 2,
+        "current_members": 6
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_13][Category=Eos][1]/reinforcement_list[1]/reinforcement_data[3]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_6",
+        "original_members": 2,
+        "current_members": 6
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_13][Category=Eos][1]/reinforcement_list[1]/reinforcement_data[4]/squad_def[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_3",
+        "original_members": 1,
+        "current_members": 3
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_13][Category=Eos][1]/reinforcement_list[1]/reinforcement_data[5]/squad_def[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_2",
+        "original_members": 1,
+        "current_members": 2
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_14][Category=Eos][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_4",
+        "current": "basic_squad_6",
+        "original_members": 4,
+        "current_members": 6
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_14][Category=Eos][1]/reinforcement_list[1]/reinforcement_data[2]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_6",
+        "original_members": 2,
+        "current_members": 6
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_14][Category=Eos][1]/reinforcement_list[1]/reinforcement_data[3]/squad_def[1]",
+        "original": "basic_squad_2",
+        "current": "basic_squad_6",
+        "original_members": 2,
+        "current_members": 6
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_14][Category=Eos][1]/reinforcement_list[1]/reinforcement_data[4]/squad_def[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_2",
+        "original_members": 1,
+        "current_members": 2
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_14][Category=Eos][1]/reinforcement_list[1]/reinforcement_data[5]/squad_def[1]",
+        "original": "basic_squad_1",
+        "current": "basic_squad_2",
+        "original_members": 1,
+        "current_members": 2
+      },
+      {
+        "package": "table",
+        "file": "activity_house_arrest.xtbl",
+        "path": "/root/Table[1]/house_arrest[Name=je_ha_15][Category=Eos][1]/reinforcement_list[1]/reinforcement_data[1]/squad_def[1]",
+        "original": "basic_squad_8",
+        "current": "basic_squad_10",
+        "original_members": 8,
+        "current_members": null
+      }
+    ],
+    "gauss_dps_ratio_without_reload_or_animation_limits": 14.880952380952381,
+    "ammo_flags": [],
+    "gauss_rearmed_character_records": [
+      {
+        "package": "misc",
+        "name": "Kyle",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Clark",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Debbie",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Chuck",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Jamaya",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Kayla",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Krystal",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Lawrence",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Numah",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Samanya",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Blair",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Isaiah",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Jackson",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "VIP_Guerilla",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Carmen",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Olga",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Dustin",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Bev",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Jayde",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Marie",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Torvald",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "John",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Pierce",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Kat",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Jorge",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Celia",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Blair_Dust",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Chuck_Dust",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Heidi_Dust",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Isaiah_Dust",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Jackson_Dust",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Jake_Dust",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Jamaya_Dust",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Kayla_Dust",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Krystal_Dust",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Numah_Dust",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Rachel_Dust",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Selma_Dust",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Jake",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Selma",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Celia_Parker",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Chuck_Parker",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Dustin_Parker",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Heidi_Parker",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "John_Parker",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Kat_Parker",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Kayla_Parker",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Olga_Parker",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Pierce_Parker",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Rachel_Parker",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "RFCommander",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Heidi",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Ian",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Jean",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Mila",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Rachel",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Blair_Eos",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Celia_Eos",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Chuck_Eos",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Isaiah_Eos",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Jake_Eos",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Jamaya_Eos",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "John_Eos",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Kat_Eos",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Krystal_Eos",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Numah_Eos",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Pierce_Eos",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Selma_Eos",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Blair_Oasis",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Celia_Oasis",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Heidi_Oasis",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Ian_Oasis",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Isaiah_Oasis",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Jackson_Oasis",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Jake_Oasis",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Jean_Oasis",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "John_Oasis",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Kat_Oasis",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Mila_Oasis",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Olga_Oasis",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Pierce_Oasis",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Rachel_Oasis",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "Selma_Oasis",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "rfg_PC_Kyle",
+        "team": "Guerilla"
+      },
+      {
+        "package": "misc",
+        "name": "rfg_PC_jake",
+        "team": "Guerilla"
+      }
+    ]
+  },
+  "samples": {
+    "remote_charge": {
+      "package": "misc",
+      "file": "explosions.xtbl",
+      "xpath": "./Table/Explosion[Name='remote_charge']",
+      "original": {
+        "Radius": "3.0",
+        "CrumbleRadius": "3.75",
+        "KnockdownRadius": "5.5",
+        "FlinchRadius": "9.0",
+        "Structural_Damage": "22500",
+        "Human_Damage_Max": "1250",
+        "human_damage_min": "250",
+        "vehicle_damage_max": "3000",
+        "Impulse": "24000",
+        "player_mult": "0.8"
+      },
+      "current": {
+        "Radius": "9",
+        "CrumbleRadius": "11.25",
+        "KnockdownRadius": "16.5",
+        "FlinchRadius": "27",
+        "Structural_Damage": "112500",
+        "Human_Damage_Max": "6250",
+        "human_damage_min": "1250",
+        "vehicle_damage_max": "15000",
+        "Impulse": "24000",
+        "player_mult": "0.8"
+      }
+    },
+    "sledgehammer_melee_vert": {
+      "package": "misc",
+      "file": "melee.xtbl",
+      "xpath": "./Table/MeleeMove[Name='sledgehammer_melee_vert']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']",
+      "original": {
+        "Damage/DefaultDamage": "1500",
+        "Damage/StructureDamage": "1500",
+        "Damage/NPCDamage": "750",
+        "Damage/VehicleDamage": "250",
+        "Damage/PlayerDamageFromNPC": "750",
+        "HitRange": "2.2",
+        "ImpactForce": "300"
+      },
+      "current": {
+        "Damage/DefaultDamage": "75000",
+        "Damage/StructureDamage": "75000",
+        "Damage/NPCDamage": "37500",
+        "Damage/VehicleDamage": "12500",
+        "Damage/PlayerDamageFromNPC": "37.5",
+        "HitRange": "2.2",
+        "ImpactForce": "900"
+      }
+    },
+    "sledgehammer_melee_vert_u1": {
+      "package": "misc",
+      "file": "melee.xtbl",
+      "xpath": "./Table/MeleeMove[Name='sledgehammer_melee_vert_u1']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']",
+      "original": {
+        "Damage/DefaultDamage": "2000",
+        "Damage/StructureDamage": "2000",
+        "Damage/NPCDamage": "950",
+        "Damage/VehicleDamage": "350",
+        "Damage/PlayerDamageFromNPC": "750",
+        "HitRange": "2.2",
+        "ImpactForce": "350"
+      },
+      "current": {
+        "Damage/DefaultDamage": "40000",
+        "Damage/StructureDamage": "40000",
+        "Damage/NPCDamage": "19000",
+        "Damage/VehicleDamage": "7000",
+        "Damage/PlayerDamageFromNPC": "37.5",
+        "HitRange": "2.2",
+        "ImpactForce": "350"
+      }
+    },
+    "sledgehammer_melee_vert_u2": {
+      "package": "misc",
+      "file": "melee.xtbl",
+      "xpath": "./Table/MeleeMove[Name='sledgehammer_melee_vert_u2']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']",
+      "original": {
+        "Damage/DefaultDamage": "2500",
+        "Damage/StructureDamage": "2500",
+        "Damage/NPCDamage": "1150",
+        "Damage/VehicleDamage": "450",
+        "Damage/PlayerDamageFromNPC": "750",
+        "HitRange": "2.2",
+        "ImpactForce": "400"
+      },
+      "current": {
+        "Damage/DefaultDamage": "50000",
+        "Damage/StructureDamage": "50000",
+        "Damage/NPCDamage": "23000",
+        "Damage/VehicleDamage": "9000",
+        "Damage/PlayerDamageFromNPC": "37.5",
+        "HitRange": "2.2",
+        "ImpactForce": "400"
+      }
+    },
+    "sledgehammer_melee_vert_gold": {
+      "package": "misc",
+      "file": "melee.xtbl",
+      "xpath": "./Table/MeleeMove[Name='sledgehammer_melee_vert_gold']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']",
+      "original": {
+        "Damage/DefaultDamage": "5000",
+        "Damage/StructureDamage": "5000",
+        "Damage/NPCDamage": "2300",
+        "Damage/VehicleDamage": "900",
+        "Damage/PlayerDamageFromNPC": "750",
+        "HitRange": "2.2",
+        "ImpactForce": "800"
+      },
+      "current": {
+        "Damage/DefaultDamage": "500000",
+        "Damage/StructureDamage": "500000",
+        "Damage/NPCDamage": "230000",
+        "Damage/VehicleDamage": "90000",
+        "Damage/PlayerDamageFromNPC": "37.5",
+        "HitRange": "2.2",
+        "ImpactForce": "800"
+      }
+    },
+    "gauss_rifle": {
+      "package": "misc",
+      "file": "weapons.xtbl",
+      "xpath": "./Table/Weapon[Name='gauss_rifle']",
+      "original": {
+        "Damage_Scaling_Min/NPC_Damage": "115",
+        "Damage_Scaling_Max/NPC_Damage": "95",
+        "Damage_Scaling_Max/Player_Damage": "50",
+        "Default_Refire_Delay": "250",
+        "Magazine_Size": "18",
+        "Max_Rounds": "72",
+        "Range_Max": "40"
+      },
+      "current": {
+        "Damage_Scaling_Min/NPC_Damage": "575",
+        "Damage_Scaling_Max/NPC_Damage": "475",
+        "Damage_Scaling_Max/Player_Damage": "2.5",
+        "Default_Refire_Delay": "84",
+        "Magazine_Size": "90",
+        "Max_Rounds": "360",
+        "Range_Max": "120"
+      }
+    },
+    "nano_rifle": {
+      "package": "misc",
+      "file": "weapons.xtbl",
+      "xpath": "./Table/Weapon[Name='nano_rifle']",
+      "original": {
+        "Explosion": "nano_rifle_exp",
+        "Trigger_Type": "single",
+        "Default_Refire_Delay": "350",
+        "Magazine_Size": "5",
+        "Max_Rounds": "15"
+      },
+      "current": {
+        "Explosion": "edf_mediumtank_shell",
+        "Trigger_Type": "automatic",
+        "Default_Refire_Delay": "117",
+        "Magazine_Size": "25",
+        "Max_Rounds": "75"
+      }
+    },
+    "character_rfg_PC": {
+      "package": "misc",
+      "file": "character.xtbl",
+      "xpath": "./Table/Character[Name='rfg_PC']",
+      "original": {
+        "Team": "Guerilla",
+        "max_hit_points": "550",
+        "max_speed": "5",
+        "Height": "1.0"
+      },
+      "current": {
+        "Team": "Guerilla",
+        "max_hit_points": "5500",
+        "max_speed": "10",
+        "Height": "1.0"
+      }
+    },
+    "character_Kyle": {
+      "package": "misc",
+      "file": "character.xtbl",
+      "xpath": "./Table/Character[Name='Kyle']",
+      "original": {
+        "Team": "Guerilla",
+        "max_hit_points": "400",
+        "max_speed": "5",
+        "Height": "1.0"
+      },
+      "current": {
+        "Team": "Guerilla",
+        "max_hit_points": "2000",
+        "max_speed": "5",
+        "Height": "1.0"
+      }
+    },
+    "character_Admiral_Kobel": {
+      "package": "misc",
+      "file": "character.xtbl",
+      "xpath": "./Table/Character[Name='Admiral_Kobel']",
+      "original": {
+        "Team": "EDF",
+        "max_hit_points": "400",
+        "max_speed": "5",
+        "Height": "1.0"
+      },
+      "current": {
+        "Team": "EDF",
+        "max_hit_points": "1200",
+        "max_speed": "5",
+        "Height": "1.0"
+      }
+    },
+    "character_Jayde": {
+      "package": "misc",
+      "file": "character.xtbl",
+      "xpath": "./Table/Character[Name='Jayde']",
+      "original": {
+        "Team": "Guerilla",
+        "max_hit_points": "400",
+        "max_speed": "5",
+        "Height": "1.0"
+      },
+      "current": {
+        "Team": "Guerilla",
+        "max_hit_points": "2000",
+        "max_speed": "5",
+        "Height": "1.0"
+      }
+    },
+    "character_Olga": {
+      "package": "misc",
+      "file": "character.xtbl",
+      "xpath": "./Table/Character[Name='Olga']",
+      "original": {
+        "Team": "Guerilla",
+        "max_hit_points": "400",
+        "max_speed": "5",
+        "Height": "1.0"
+      },
+      "current": {
+        "Team": "Guerilla",
+        "max_hit_points": "2000",
+        "max_speed": "5",
+        "Height": "1.0"
+      }
+    },
+    "character_Torvald": {
+      "package": "misc",
+      "file": "character.xtbl",
+      "xpath": "./Table/Character[Name='Torvald']",
+      "original": {
+        "Team": "Guerilla",
+        "max_hit_points": "400",
+        "max_speed": "5",
+        "Height": "1.0"
+      },
+      "current": {
+        "Team": "Guerilla",
+        "max_hit_points": "2000",
+        "max_speed": "5",
+        "Height": "1.0"
+      }
+    },
+    "character_Jake": {
+      "package": "misc",
+      "file": "character.xtbl",
+      "xpath": "./Table/Character[Name='Jake']",
+      "original": {
+        "Team": "Guerilla",
+        "max_hit_points": "400",
+        "max_speed": "5",
+        "Height": "1.0"
+      },
+      "current": {
+        "Team": "Guerilla",
+        "max_hit_points": "2000",
+        "max_speed": "5",
+        "Height": "1.0"
+      }
+    },
+    "character_Jackson": {
+      "package": "misc",
+      "file": "character.xtbl",
+      "xpath": "./Table/Character[Name='Jackson']",
+      "original": {
+        "Team": "Guerilla",
+        "max_hit_points": "400",
+        "max_speed": "5",
+        "Height": "1.0"
+      },
+      "current": {
+        "Team": "Guerilla",
+        "max_hit_points": "2000",
+        "max_speed": "5",
+        "Height": "1.0"
+      }
+    },
+    "hostage_wave_misc": {
+      "package": "misc",
+      "file": "activity_house_arrest.xtbl",
+      "xpath": "./Table/house_arrest[Name='je_ha_05']/reinforcement_list/reinforcement_data[2]",
+      "original": {
+        "squad_def": "basic_squad_4",
+        "spawn_delay": "30"
+      },
+      "current": {
+        "squad_def": "basic_squad_6",
+        "spawn_delay": "10"
+      }
+    },
+    "hostage_wave_table": {
+      "package": "table",
+      "file": "activity_house_arrest.xtbl",
+      "xpath": "./Table/house_arrest[Name='je_ha_05']/reinforcement_list/reinforcement_data[2]",
+      "original": {
+        "squad_def": "basic_squad_4",
+        "spawn_delay": "30"
+      },
+      "current": {
+        "squad_def": "basic_squad_6",
+        "spawn_delay": "10"
+      }
+    }
+  },
+  "file_changes": [
+    {
+      "package": "misc",
+      "file": "activity_air_strike_defense.xtbl",
+      "modified": 1,
+      "original_sha256": "1a0106ee00ad56904297ff845cd8484f1364311ecf735b106cb6f18e9a21c5dd",
+      "current_sha256": "ec6e0b6014446620233b514cbc2468e0c1867f67c21c030e6b64147bad9d44ea"
+    },
+    {
+      "package": "misc",
+      "file": "activity_area_defense.xtbl",
+      "modified": 18,
+      "original_sha256": "c69328e270856e414caa323b91c6bdd9b06a780e643ae017037382f5638df486",
+      "current_sha256": "e2c5aa43d23f32c283a4cebf83877fc2eaf0d4792c66ca65df10367b86c553b7"
+    },
+    {
+      "package": "misc",
+      "file": "activity_courier_chase.xtbl",
+      "modified": 12,
+      "original_sha256": "c50a13cc3762b74b2d2e1a75c5645ba7dca15c9b7683c4dea220374f225fa8fb",
+      "current_sha256": "28b03aa0d8409daef56a3533c10c52159b68de8baca1b95f9fd4b468d3ce2d75"
+    },
+    {
+      "package": "misc",
+      "file": "activity_demolitions_master.xtbl",
+      "modified": 60,
+      "original_sha256": "1df9c39d3538c5e5611fb138611fa391ebd8a74a4acb2772d4aa71b2a97fc6e1",
+      "current_sha256": "d18ca637a5a4eb07acbe1848b1043106718619fc5644f256b98626f5bb6014b9"
+    },
+    {
+      "package": "misc",
+      "file": "activity_house_arrest.xtbl",
+      "modified": 38,
+      "original_sha256": "94f129107438c90510c125d0045497b668f0d440e5229dbb4ab8db4f2f85b757",
+      "current_sha256": "25b91f7db868b6f2d6d1bf2e0f9372a5d49eb388f17fd0a28d540983bc5269b2"
+    },
+    {
+      "package": "misc",
+      "file": "activity_timed_delivery.xtbl",
+      "modified": 40,
+      "original_sha256": "854d3c81698b355e6dae3f34e2d6be83962d0315ea5e74d5fdccd3de4cf64b5d",
+      "current_sha256": "0b580be4703f24f121f136e03221fa826d8fe0ab6a294975bad40f06a16d4f5f"
+    },
+    {
+      "package": "misc",
+      "file": "character.xtbl",
+      "modified": 205,
+      "original_sha256": "dc511b4e81d1530affb3b05528d7109c88c412e080d551ceb10245bbdaabb45f",
+      "current_sha256": "5708156388de4830b4fde61ae840c39ed1390255bbc3948dbbd97bfc8a11b44f"
+    },
+    {
+      "package": "misc",
+      "file": "difficulty.xtbl",
+      "modified": 33,
+      "original_sha256": "83b0af808a682eef88d6dc3b177d3b1e80be2034de533bf827508de4a5fc7113",
+      "current_sha256": "af1792f98906fb9fb7237e588908aa9ed06dba93333cd293e6bb9dec9df8ec3e"
+    },
+    {
+      "package": "misc",
+      "file": "explosions.xtbl",
+      "modified": 83,
+      "original_sha256": "35418779c1dcb5742d4cfab49b533aa6c6409c50dc884942f4eb78f337e78a8e",
+      "current_sha256": "41323e01f269bf0a6dd036000f2cff4d57df2f2264d30d149989d43f06d7c341"
+    },
+    {
+      "package": "misc",
+      "file": "melee.xtbl",
+      "modified": 78,
+      "original_sha256": "7c3898ef8e1431633cb788ed657210f5607656b8e53e223178eb4c809cca76d7",
+      "current_sha256": "a8c057a0290bd86030edff7539109fa3a174d82dd4b12fd8ed57c82b0ee25a2f"
+    },
+    {
+      "package": "misc",
+      "file": "raid_data.xtbl",
+      "modified": 289,
+      "original_sha256": "47ab187d78979a176a9c0f0538ac438d23ed4edbf8a0fd42bc61deb90daf3875",
+      "current_sha256": "078233fbf1754baf31b51b3c51cf6e743dbf9c3e87827edddc226649017a6dd1"
+    },
+    {
+      "package": "misc",
+      "file": "spawn_group_vehicle.xtbl",
+      "modified": 62,
+      "original_sha256": "bff83143ba9e5d1898708b7ebeaacec9c54aefec4fd91c0183692b9c894ea20b",
+      "current_sha256": "ebcdf9192517edcefd4af78f7312ede1b90d06d1f2de0ef84d14ca4f118ca42c"
+    },
+    {
+      "package": "misc",
+      "file": "tweak_table.xtbl",
+      "modified": 2,
+      "original_sha256": "611e5f25240d7f5968a159f83acace751a017031e5d73f8276f164c2ce4f6f1b",
+      "current_sha256": "3ecd7db4b0fa08d8d770b6fb56341139ee8e58bc19fddfe84770d9af86fe953c"
+    },
+    {
+      "package": "misc",
+      "file": "vehicles.xtbl",
+      "modified": 423,
+      "original_sha256": "b4385abdf21c3662f0696619157cadebe7219a31ede7c832e271d8c5299a8d81",
+      "current_sha256": "3f17c095fa6896c916b06e7cf0e705d8ab9d16354966e96496d733dda0ac2af3"
+    },
+    {
+      "package": "misc",
+      "file": "weapons.xtbl",
+      "modified": 592,
+      "removed_path": 7,
+      "original_sha256": "0137c7d39fb7148f8c58c20ca9363d56d89d11f34e7ca20c85d65b0e7065dc5a",
+      "current_sha256": "e3780c93f24a870c074c43ae209e62d66e4271712ae4f7146a6414bab347bbc6"
+    },
+    {
+      "package": "table",
+      "file": "activity_house_arrest.xtbl",
+      "modified": 41,
+      "original_sha256": "94f129107438c90510c125d0045497b668f0d440e5229dbb4ab8db4f2f85b757",
+      "current_sha256": "e72f111e5a304ddc6e97046079211062907eee553fdc2f1c768a5305e2486299"
+    },
+    {
+      "package": "table",
+      "file": "activity_timed_delivery.xtbl",
+      "modified": 20,
+      "original_sha256": "854d3c81698b355e6dae3f34e2d6be83962d0315ea5e74d5fdccd3de4cf64b5d",
+      "current_sha256": "0c2e4343a58970338e76d3b6a0a7ada500cefab6e4520f56076e305dc27ef073"
+    },
+    {
+      "package": "table",
+      "file": "character.xtbl",
+      "added_path": 1,
+      "modified": 126,
+      "removed_path": 16,
+      "original_sha256": "dc511b4e81d1530affb3b05528d7109c88c412e080d551ceb10245bbdaabb45f",
+      "current_sha256": "b075778c50775bb16b4513a8a54ba81f1cad057c7f1a6a03fd5394059e26fc35"
+    },
+    {
+      "package": "table",
+      "file": "difficulty.xtbl",
+      "modified": 16,
+      "original_sha256": "83b0af808a682eef88d6dc3b177d3b1e80be2034de533bf827508de4a5fc7113",
+      "current_sha256": "feac141d9f86a4fb8212cb270f4ab5b60ccddded6581549d5d54f049bd6470a9"
+    },
+    {
+      "package": "table",
+      "file": "explosions.xtbl",
+      "modified": 81,
+      "original_sha256": "35418779c1dcb5742d4cfab49b533aa6c6409c50dc884942f4eb78f337e78a8e",
+      "current_sha256": "db958483af2badeb3f4c1a6f3204a0003ee53b629a90960c5ff106666ab61184"
+    },
+    {
+      "package": "table",
+      "file": "melee.xtbl",
+      "modified": 74,
+      "original_sha256": "7c3898ef8e1431633cb788ed657210f5607656b8e53e223178eb4c809cca76d7",
+      "current_sha256": "d5a28a791cc8c2f06b81a5bd0f917f86d9b60834774d56b1a9eee5890c17b187"
+    },
+    {
+      "package": "table",
+      "file": "weapons.xtbl",
+      "modified": 10,
+      "original_sha256": "0137c7d39fb7148f8c58c20ca9363d56d89d11f34e7ca20c85d65b0e7065dc5a",
+      "current_sha256": "bade71c43e0720498be0e7690c60f6135b83f888b61965e7837048f88504245c"
+    }
+  ],
+  "cross_archive_conflicts": [
+    {
+      "file": "activity_air_strike_defense.xtbl",
+      "shared_value_paths_different": 1,
+      "misc_only_value_paths": 0,
+      "table_only_value_paths": 0
+    },
+    {
+      "file": "activity_area_defense.xtbl",
+      "shared_value_paths_different": 18,
+      "misc_only_value_paths": 0,
+      "table_only_value_paths": 0
+    },
+    {
+      "file": "activity_courier_chase.xtbl",
+      "shared_value_paths_different": 12,
+      "misc_only_value_paths": 0,
+      "table_only_value_paths": 0
+    },
+    {
+      "file": "activity_demolitions_master.xtbl",
+      "shared_value_paths_different": 60,
+      "misc_only_value_paths": 0,
+      "table_only_value_paths": 0
+    },
+    {
+      "file": "activity_house_arrest.xtbl",
+      "shared_value_paths_different": 10,
+      "misc_only_value_paths": 0,
+      "table_only_value_paths": 0
+    },
+    {
+      "file": "activity_timed_delivery.xtbl",
+      "shared_value_paths_different": 20,
+      "misc_only_value_paths": 0,
+      "table_only_value_paths": 0
+    },
+    {
+      "file": "character.xtbl",
+      "shared_value_paths_different": 103,
+      "misc_only_value_paths": 16,
+      "table_only_value_paths": 1
+    },
+    {
+      "file": "difficulty.xtbl",
+      "shared_value_paths_different": 17,
+      "misc_only_value_paths": 0,
+      "table_only_value_paths": 0
+    },
+    {
+      "file": "explosions.xtbl",
+      "shared_value_paths_different": 6,
+      "misc_only_value_paths": 0,
+      "table_only_value_paths": 0
+    },
+    {
+      "file": "melee.xtbl",
+      "shared_value_paths_different": 4,
+      "misc_only_value_paths": 0,
+      "table_only_value_paths": 0
+    },
+    {
+      "file": "raid_data.xtbl",
+      "shared_value_paths_different": 289,
+      "misc_only_value_paths": 0,
+      "table_only_value_paths": 0
+    },
+    {
+      "file": "spawn_group_vehicle.xtbl",
+      "shared_value_paths_different": 62,
+      "misc_only_value_paths": 0,
+      "table_only_value_paths": 0
+    },
+    {
+      "file": "tweak_table.xtbl",
+      "shared_value_paths_different": 2,
+      "misc_only_value_paths": 0,
+      "table_only_value_paths": 0
+    },
+    {
+      "file": "vehicles.xtbl",
+      "shared_value_paths_different": 423,
+      "misc_only_value_paths": 0,
+      "table_only_value_paths": 0
+    },
+    {
+      "file": "weapons.xtbl",
+      "shared_value_paths_different": 582,
+      "misc_only_value_paths": 0,
+      "table_only_value_paths": 7
+    }
+  ],
+  "audit_scope": {
+    "rows": 2316,
+    "rows_current_different_from_original": 2304,
+    "census_values_not_in_previous_audit": 24,
+    "census_status_counts": {
+      "modified": 2304,
+      "removed_path": 23,
+      "added_path": 1
+    },
+    "census_xml_sections": {
+      "TableTemplates": 52,
+      "Table": 2271,
+      "TableDescription": 4,
+      "EntryCategories": 1
+    }
+  }
+}

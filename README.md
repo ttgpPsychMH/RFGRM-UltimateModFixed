@@ -9,6 +9,7 @@ Bản điều chỉnh Ultimate Mod cho **Red Faction Guerrilla Re-Mars-tered**, 
 - [Đọc hướng dẫn đầy đủ](downloads/HUONG_DAN.txt) · [SHA-256](downloads/SHA256SUMS.txt).
 - [Bảng tốc độ toàn bộ 146 cấu hình xe: original và từng gói hiện tại](reports/vehicle-speeds.md) · [CSV](reports/vehicle-speeds.csv).
 - [Kiểm tra walking / running / sprinting của nhân vật chính](reports/player-movement.md).
+- [Đánh giá cân bằng V3, rủi ro đối với nhiệm vụ và hướng cấu hình campaign](reports/campaign-balance-review.md) · [CSV toàn bộ khác biệt](reports/campaign-safety-inventory.csv).
 
 V3 chỉ giảm các giới hạn tốc độ tiến/lùi và mô-men xoắn/RPM đã được chọn từ ×3 xuống **×1,5 original**. Giữ nguyên các thiết lập khác, kể cả HP xe ×5. Có 349 giá trị đổi trong `vehicles.xtbl` của `misc.vpp_pc`; toàn bộ `table.vpp_pc` giữ nguyên từng byte từ V2. Hai gói giữ phạm vi sửa riêng như đã thống nhất.
 
