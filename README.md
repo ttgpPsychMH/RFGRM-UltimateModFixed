@@ -8,6 +8,8 @@ Bản mod cho **Red Faction Guerrilla Re-Mars-tered**, dùng để chơi offline
 
 [Báo cáo thay đổi và mã dựng](https://github.com/ttgpPsychMH/RFGRM-UltimateModFixed/raw/refs/heads/main/downloads/Ultimate_Mod_Campaign_v4_Reports.zip) · [Chi tiết cấu hình V4](reports/campaign-v4.md) · [Mọi giá trị original → V4](reports/campaign-v4-parameters.csv) · [Kết quả kiểm tra](reports/campaign-v4-validation.json) · [SHA-256](downloads/SHA256SUMS.txt).
 
+[Toàn bộ thông số búa: original/V4, giải thích, animation và hướng tinh chỉnh](reports/hammer-reference.md).
+
 V4 được dựng lại từ **hai file BACKUP gốc đã xác minh**, chỉ giữ cấu hình xe từ V3 theo yêu cầu. Trang bị NPC, tên đội quân, loại xe spawn, liên kết vũ khí và điều kiện mở khóa lấy từ original.
 
 | Nhóm | Cấu hình V4 |
