@@ -1,0 +1,286 @@
+{
+  "status": "passed",
+  "packages": {
+    "misc": {
+      "file_count": 1208,
+      "xml_valid": 422,
+      "unchanged_original_xml_exceptions": {
+        "credits.xtbl": "not well-formed (invalid token): line 41, column 21"
+      },
+      "changed_files": [
+        "activity_area_defense.xtbl",
+        "activity_courier_chase.xtbl",
+        "activity_demolitions_master.xtbl",
+        "activity_house_arrest.xtbl",
+        "activity_mayhem.xtbl",
+        "activity_timed_delivery.xtbl",
+        "character.xtbl",
+        "difficulty.xtbl",
+        "dlc01_activity_demolitions_master.xtbl",
+        "dlc01_activity_timed_delivery.xtbl",
+        "dlc01_character.xtbl",
+        "dlc01_explosions.xtbl",
+        "dlc01_guerrilla_reinforcement.xtbl",
+        "dlc01_melee.xtbl",
+        "dlc01_raid_data.xtbl",
+        "dlc01_tweak_table.xtbl",
+        "dlc01_upgrades.xtbl",
+        "dlc01_weapons.xtbl",
+        "explosions.xtbl",
+        "guerrilla_reinforcement.xtbl",
+        "melee.xtbl",
+        "raid_data.xtbl",
+        "reinforcement_profile.xtbl",
+        "tweak_table.xtbl",
+        "upgrades.xtbl",
+        "vehicles.xtbl",
+        "weapons.xtbl"
+      ],
+      "numeric_changes_verified": 1685,
+      "protected_text_values_verified": 29795,
+      "roundtrip_passed": true,
+      "independent_reader_passed": true,
+      "no_new_min_max_violations": true,
+      "vehicle_values_exact_v3": true,
+      "original_reference_structure_and_binary_assets_preserved": true
+    },
+    "table": {
+      "file_count": 423,
+      "xml_valid": 422,
+      "unchanged_original_xml_exceptions": {
+        "credits.xtbl": "not well-formed (invalid token): line 41, column 21"
+      },
+      "changed_files": [
+        "activity_area_defense.xtbl",
+        "activity_courier_chase.xtbl",
+        "activity_demolitions_master.xtbl",
+        "activity_house_arrest.xtbl",
+        "activity_mayhem.xtbl",
+        "activity_timed_delivery.xtbl",
+        "character.xtbl",
+        "difficulty.xtbl",
+        "dlc01_activity_demolitions_master.xtbl",
+        "dlc01_activity_timed_delivery.xtbl",
+        "dlc01_character.xtbl",
+        "dlc01_explosions.xtbl",
+        "dlc01_guerrilla_reinforcement.xtbl",
+        "dlc01_melee.xtbl",
+        "dlc01_raid_data.xtbl",
+        "dlc01_tweak_table.xtbl",
+        "dlc01_upgrades.xtbl",
+        "dlc01_weapons.xtbl",
+        "explosions.xtbl",
+        "guerrilla_reinforcement.xtbl",
+        "melee.xtbl",
+        "raid_data.xtbl",
+        "reinforcement_profile.xtbl",
+        "tweak_table.xtbl",
+        "upgrades.xtbl",
+        "weapons.xtbl"
+      ],
+      "numeric_changes_verified": 1262,
+      "protected_text_values_verified": 23870,
+      "roundtrip_passed": true,
+      "independent_reader_passed": true,
+      "no_new_min_max_violations": true,
+      "vehicle_values_exact_v3": true,
+      "original_reference_structure_and_binary_assets_preserved": true
+    }
+  },
+  "game_runtime_tested": false,
+  "duplicate_tables_consistent_except_v3_vehicles": true,
+  "representative_checks": [
+    {
+      "package": "misc",
+      "file": "character.xtbl",
+      "xpath": ".//Table/Character[Name='rfg_PC']/max_speed",
+      "value": "10"
+    },
+    {
+      "package": "table",
+      "file": "character.xtbl",
+      "xpath": ".//Table/Character[Name='rfg_PC']/max_speed",
+      "value": "10"
+    },
+    {
+      "package": "misc",
+      "file": "character.xtbl",
+      "xpath": ".//Table/Character[Name='rfg_PC']/max_hit_points",
+      "value": "5500"
+    },
+    {
+      "package": "table",
+      "file": "character.xtbl",
+      "xpath": ".//Table/Character[Name='rfg_PC']/max_hit_points",
+      "value": "5500"
+    },
+    {
+      "package": "misc",
+      "file": "character.xtbl",
+      "xpath": ".//Table/Character[Name='rfg_PC']/Height",
+      "value": "1.0"
+    },
+    {
+      "package": "table",
+      "file": "character.xtbl",
+      "xpath": ".//Table/Character[Name='rfg_PC']/Height",
+      "value": "1.0"
+    },
+    {
+      "package": "misc",
+      "file": "character.xtbl",
+      "xpath": ".//Table/Character[Name='Kyle']/max_hit_points",
+      "value": "1200"
+    },
+    {
+      "package": "table",
+      "file": "character.xtbl",
+      "xpath": ".//Table/Character[Name='Kyle']/max_hit_points",
+      "value": "1200"
+    },
+    {
+      "package": "misc",
+      "file": "character.xtbl",
+      "xpath": ".//Table/Character[Name='Admiral_Kobel']/max_hit_points",
+      "value": "800"
+    },
+    {
+      "package": "table",
+      "file": "character.xtbl",
+      "xpath": ".//Table/Character[Name='Admiral_Kobel']/max_hit_points",
+      "value": "800"
+    },
+    {
+      "package": "misc",
+      "file": "explosions.xtbl",
+      "xpath": ".//Table/Explosion[Name='remote_charge']/Radius",
+      "value": "4.5"
+    },
+    {
+      "package": "table",
+      "file": "explosions.xtbl",
+      "xpath": ".//Table/Explosion[Name='remote_charge']/Radius",
+      "value": "4.5"
+    },
+    {
+      "package": "misc",
+      "file": "explosions.xtbl",
+      "xpath": ".//Table/Explosion[Name='remote_charge']/Human_Damage_Max",
+      "value": "2500"
+    },
+    {
+      "package": "table",
+      "file": "explosions.xtbl",
+      "xpath": ".//Table/Explosion[Name='remote_charge']/Human_Damage_Max",
+      "value": "2500"
+    },
+    {
+      "package": "misc",
+      "file": "explosions.xtbl",
+      "xpath": ".//Table/Explosion[Name='remote_charge']/Structural_Damage",
+      "value": "33750"
+    },
+    {
+      "package": "table",
+      "file": "explosions.xtbl",
+      "xpath": ".//Table/Explosion[Name='remote_charge']/Structural_Damage",
+      "value": "33750"
+    },
+    {
+      "package": "misc",
+      "file": "explosions.xtbl",
+      "xpath": ".//Table/Explosion[Name='rocket']/Radius",
+      "value": "5.475"
+    },
+    {
+      "package": "table",
+      "file": "explosions.xtbl",
+      "xpath": ".//Table/Explosion[Name='rocket']/Radius",
+      "value": "5.475"
+    },
+    {
+      "package": "misc",
+      "file": "explosions.xtbl",
+      "xpath": ".//Table/Explosion[Name='thermo_rocket']/Radius",
+      "value": "6.5"
+    },
+    {
+      "package": "table",
+      "file": "explosions.xtbl",
+      "xpath": ".//Table/Explosion[Name='thermo_rocket']/Radius",
+      "value": "6.5"
+    },
+    {
+      "package": "misc",
+      "file": "explosions.xtbl",
+      "xpath": ".//Table/Explosion[Name='thermo_rocket']/Human_Damage_Max",
+      "value": "9000"
+    },
+    {
+      "package": "table",
+      "file": "explosions.xtbl",
+      "xpath": ".//Table/Explosion[Name='thermo_rocket']/Human_Damage_Max",
+      "value": "9000"
+    },
+    {
+      "package": "misc",
+      "file": "weapons.xtbl",
+      "xpath": ".//Table/Weapon[Name='m16']/Damage_Scaling_Max/NPC_Damage",
+      "value": "135"
+    },
+    {
+      "package": "table",
+      "file": "weapons.xtbl",
+      "xpath": ".//Table/Weapon[Name='m16']/Damage_Scaling_Max/NPC_Damage",
+      "value": "135"
+    },
+    {
+      "package": "misc",
+      "file": "weapons.xtbl",
+      "xpath": ".//Table/Weapon[Name='charge_placer']/Max_Rounds",
+      "value": "90"
+    },
+    {
+      "package": "table",
+      "file": "weapons.xtbl",
+      "xpath": ".//Table/Weapon[Name='charge_placer']/Max_Rounds",
+      "value": "90"
+    },
+    {
+      "package": "misc",
+      "file": "weapons.xtbl",
+      "xpath": ".//Table/Weapon[Name='charge_placer']/Max_Rounds_Upgrade",
+      "value": "150"
+    },
+    {
+      "package": "table",
+      "file": "weapons.xtbl",
+      "xpath": ".//Table/Weapon[Name='charge_placer']/Max_Rounds_Upgrade",
+      "value": "150"
+    },
+    {
+      "package": "misc",
+      "file": "activity_house_arrest.xtbl",
+      "xpath": ".//Table/house_arrest[Name='je_ha_04']/Hostage_Kill_Time",
+      "value": "90"
+    },
+    {
+      "package": "table",
+      "file": "activity_house_arrest.xtbl",
+      "xpath": ".//Table/house_arrest[Name='je_ha_04']/Hostage_Kill_Time",
+      "value": "90"
+    },
+    {
+      "package": "misc",
+      "file": "melee.xtbl",
+      "xpath": ".//Table/MeleeMove[Name='sledgehammer_melee_vert']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']/Damage/StructureDamage",
+      "value": "3000"
+    },
+    {
+      "package": "table",
+      "file": "melee.xtbl",
+      "xpath": ".//Table/MeleeMove[Name='sledgehammer_melee_vert']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']/Damage/StructureDamage",
+      "value": "3000"
+    }
+  ]
+}
