@@ -1,0 +1,95 @@
+﻿file,section,name,category,Radius,CrumbleRadius,KnockdownRadius,FlinchRadius,Structural_Damage,human_damage_min,Human_Damage_Max,vehicle_damage_min,vehicle_damage_max,Impulse,player_mult,player_veh_mult,player_vehicle_impulse_mult,weapon_references
+explosions.xtbl,Table,mp_shockwave_blast,Entries:Multiplayer,2.5,3.0,5.5,5.55,15000,0,1,0,1,6000,0.1,0.1,1.0,
+explosions.xtbl,Table,mp_kaboom,Entries:Multiplayer,5,2,7,22,-1,-1,-1,300,700,22000,1.0,1.0,1.0,
+explosions.xtbl,Table,rocket,Entries,3.65,4.0,6.5,10,23625,280,1700,200,3500,28000,0.6,0.7,1.0,weapons.xtbl:rpg_launcher_debug [Entries:Other] Table; weapons.xtbl:turret_rocket_standing [Entries:Turrets] Table; weapons.xtbl:turret_rocket_vehicle [Entries:Turrets] Table; weapons.xtbl:turret_rocket_slow [Entries:Turrets] Table; weapons.xtbl:rpg_launcher [Entries:Guerilla] Table; weapons.xtbl:turret_rocket_nogunner [Entries:Turrets] Table
+explosions.xtbl,Table,remote_charge,Entries,3.0,3.75,5.5,9.0,22500,250,1250,200,3000,24000,0.8,0.8,1.0,weapons.xtbl:charge_placer [Entries:Guerilla] Table; weapons.xtbl:turret_supergauss_solo [Entries:Turrets] Table; weapons.xtbl:turret_supergauss_burst [Entries:Turrets] Table; weapons.xtbl:charge_launcher [Entries:Old] TableTemplates
+explosions.xtbl,Table,grenade_exp,Entries,1.5,3.0,3.5,4.5,-1,250,700,50,900,10000,0.8,0.8,1.0,weapons.xtbl:grenade [Entries:EDF] Table
+explosions.xtbl,Table,Vehicle,Entries,4.0,6.0,9,15,-1,500,1500,250,6000,30000,0.4,0.1,1.0,
+explosions.xtbl,Table,Vehicle_EDF,Entries,4.0,6.0,10,16,-1,700,2000,250,8000,30000,0.4,0.1,1.0,
+explosions.xtbl,Table,Vehicle_EDF_tank,Entries,4.0,6.0,11,17,-1,800,2500,250,10000,30000,0.4,0.1,1.0,
+explosions.xtbl,Table,veh_walker_exp,Entries,5.0,8.0,8,15,-1,500,1500,250,8000,30000,0.5,0.1,1.0,
+explosions.xtbl,Table,Big Bang,Entries,6,8,12,24,-1,-1,-1,1500,15000,50000,1.0,1.0,1.0,
+explosions.xtbl,Table,Medium Bang,Entries,4.5,6,9,18,-1,-1,-1,1000,10000,50000,1.0,1.0,1.0,
+explosions.xtbl,Table,Small Bang,Entries,3,4,6,12,-1,-1,-1,500,5000,40000,1.0,1.0,1.0,
+explosions.xtbl,Table,Micro Bang,Entries,5,5,5,5,-1,-1,-1,50,300,7500,1.0,1.0,1.0,
+explosions.xtbl,Table,exp_fiery_small,Entries,2,3.5,4,8,-1,-1,-1,50,500,7500,1.0,1.0,1.0,
+explosions.xtbl,Table,vehicle_bomb,Entries,10,15,17,30,-1,600,5000,5000,35000,75000,0.8,0.6,1.0,
+explosions.xtbl,Table,mine,Entries,2.75,4.5,9.5,11.5,20000,650,2500,500,5000,25000,0.8,0.8,1.0,weapons.xtbl:mine_placer [Entries:MP Overrides] Table; weapons.xtbl:mine_placer [Entries:Guerilla] Table; weapons.xtbl:turret_mine_thrower_TEST [Entries:Turrets] Table
+explosions.xtbl,Table,gauss,Entries,1,1.5,2.5,3.5,8000,400,600,50,1000,12000,0.32,0.32,0.75,weapons.xtbl:turret_gauss_standing [Entries:Turrets] Table; weapons.xtbl:turret_gauss_vehicle [Entries:Turrets] Table; weapons.xtbl:turret_gauss_flyer [Entries:Turrets] Table; weapons.xtbl:turret_AA_Beam [Entries:Turrets] Table
+explosions.xtbl,Table,Chemical_Tank,Entries,6,8,9,14,-1,500,3000,1000,10000,250000,0.8,0.8,1.0,
+explosions.xtbl,Table,propane_tank,Entries,2,3.5,6,11,-1,150,1000,50,2500,19000,0.5,0.5,1.0,weapons.xtbl:propane_tank [Entries:Other] Table
+explosions.xtbl,Table,gas_barrel,Entries,4,6,8.0,15,-1,200,2000,50,5000,20000,0.5,0.5,1.0,
+explosions.xtbl,Table,Fuel_Tank,Entries,4,6,10,20,-1,-1,-1,1000,15000,20000,0.5,0.5,1.0,
+explosions.xtbl,Table,tank_shell,Entries,5.0,8.0,8,15,-1,-1,-1,1500,15000,30000,0.5,0.5,1.0,weapons.xtbl:turret_tank_1 [Entries:Turrets] Table; weapons.xtbl:aircraft_bomb [Entries:AirBomb] Table
+explosions.xtbl,Table,edf_tank_shell,Entries,5.0,8.0,8,75,-1,-1,-1,500,5000,30000,0.5,0.5,1.0,
+explosions.xtbl,Table,big_barrel_exp,Entries,4,7.5,12,30,-1,700,5000,5000,35000,75000,0.7,0.7,1.0,
+explosions.xtbl,Table,raid_demolish_building,Entries,5.0,8.0,8,15,-1,500,1500,500,5000,30000,0.8,0.8,1.0,
+explosions.xtbl,Table,veh-aax-air-exp,Entries,10,18,15,25,-1,500,5000,1500,15000,30000,0.8,0.25,1.0,
+explosions.xtbl,Table,nano_rifle_exp,Entries,1.2,0,0,1.31,0,0,0,300,300,1000,0,0,1.0,weapons.xtbl:nano_rifle [Entries:Guerilla] Table; weapons.xtbl:nano_rifle [Entries:MP Overrides] Table
+explosions.xtbl,Table,nano_rifle_exp2,Entries,0.5,0,0,0.7,10,0,0,1000,1000,0,0,0,1.0,
+explosions.xtbl,Table,ab_rocket,Entries,5,7,6,10,30000,500,2500,100,5000,36000,0.05,0.05,1.0,weapons.xtbl:ab_rpg [Entries:AirBomb] Table; weapons.xtbl:ab_rpg_dfa [Entries:AirBomb] Table
+explosions.xtbl,Table,propane_tank_large_a,Entries:Props,5,7,8,12,-1,300,2500,250,10000,25000,0.8,0.8,1.0,
+explosions.xtbl,Table,chem_tank_a,Entries:Props,7.5,9,11,18,-1,300,4000,250,10000,25000,0.8,0.8,1.0,
+explosions.xtbl,Table,0102transformer_a,Entries:Props,4.0,6.0,7.0,10,-1,300,3000,250,10000,20000,0.8,0.8,1.0,
+explosions.xtbl,Table,coolant_tank_a,Entries:Props,7.5,9,11,18,-1,300,3000,250,10000,25000,0.8,0.8,1.0,
+explosions.xtbl,Table,turret_rocket,Entries,4.0,4.5,7.5,12,19000,200,1000,0,3500,22000,0.5,0.5,0.9,weapons.xtbl:turret_edfrocket_standing [Entries:Turrets] Table; weapons.xtbl:turret_edfrocket_vehicle [Entries:Turrets] Table; weapons.xtbl:turret_edfrocket_slow [Entries:Turrets] Table; weapons.xtbl:turret_edfrocket_flyer [Entries:Turrets] Table; weapons.xtbl:turret_artillery_gun [Entries:Turrets] Table; weapons.xtbl:turret_AA_Missiles [Entries:Turrets] Table; weapons.xtbl:turretX_edfrocket_1 [Entries:Turrets] TableTemplates
+explosions.xtbl,Table,mp_civ_walker_cutter,Entries:Multiplayer,4.0,2.5,2.5,2.5,20000,0,0,0,0,22000,1.0,1.0,1.0,
+explosions.xtbl,Table,mp_rhino_cutter,Entries:Multiplayer,2.5,2.5,2.5,2.5,20000,0,0,0,0,22000,1.0,1.0,1.0,
+explosions.xtbl,Table,wmr_bridge,Entries,5,7.5,7,15,100000,500,1500,100,5000,36000,0.2,0.2,1.0,
+explosions.xtbl,Table,mis_sye_plane_exp,Entries,10,15,15,30,-1,600,5000,5000,35000,75000,0.8,0.5,1.0,
+explosions.xtbl,Table,ab_rocket_deadly,Entries,3.0,3.5,6,10,30000,750,4000,3000,8000,50000,1.0,1.0,1.0,weapons.xtbl:ab_rpg_kill_player [Entries:AirBomb] Table
+explosions.xtbl,Table,sewage_tank_a,Entries:Props,5,7,8,10,-1,300,3000,250,10000,25000,0.8,0.8,1.0,
+explosions.xtbl,Table,generator_a,Entries:Props,5,7,8,10,-1,300,3000,250,10000,25000,0.8,0.8,1.0,
+explosions.xtbl,Table,edf_singularity_bomb,Entries,4.5,6,9,18,-1,600,4000,1000,10000,50000,0.8,0.6,1.0,weapons.xtbl:singularity_bomb [Entries:EDF] Table
+explosions.xtbl,Table,gas_pump,Entries:Props,5,7,8,10,-1,300,3000,250,10000,25000,0.8,0.8,1.0,
+explosions.xtbl,Table,excavator,Entries:Props,5.0,8.0,8,15,-1,500,4000,1500,15000,30000,0.8,0.8,1.0,
+explosions.xtbl,Table,ammo_box,Entries,5.0,8.0,8,15,-1,800,5000,1500,15000,30000,0.5,0.5,1.0,
+explosions.xtbl,Table,mine_killzone,Entries,0.1,0.1,0.1,0.1,-1,-1,-1,0,0,0,1.0,1.0,1.0,
+explosions.xtbl,Table,edf_power_core,Entries,8,12,16,24,-1,600,4000,1000,10000,30000,0.8,0.8,1.0,
+explosions.xtbl,Table,edf_heavytank_shell,Entries,3.75,5.25,8,15,25000,350,3000,1000,7500,40000,0.35,0.35,0.8,weapons.xtbl:turret_HeavyTank [Entries:Turrets] Table
+explosions.xtbl,Table,edf_mediumtank_shell,Entries,3.0,4.5,6,13,20000,300,2000,600,5000,35000,0.35,0.35,0.8,weapons.xtbl:turret_MediumTank [Entries:Turrets] Table
+explosions.xtbl,Table,edf_Arttank_shell,Entries,3.5,4.5,7,11,20000,500,1500,500,5000,25000,0.3,0.3,0.9,weapons.xtbl:turret_arttank_single [Entries:Turrets] Table; weapons.xtbl:turret_arttank_burst [Entries:Turrets] Table
+explosions.xtbl,Table,mass_driver,Entries,1,1.5,2.5,3.5,8000,400,500,50,1000,15000,0.4,0.4,1.0,weapons.xtbl:turretX_mass_driver [Entries:Turrets] TableTemplates
+explosions.xtbl,Table,mp_commando_melee,Entries:Multiplayer,2.0,3.0,3.0,3.0,20000,50,400,50,800,15000,1.0,1.0,1.0,
+explosions.xtbl,Table,guerilla_rocket_turret,Entries,4.0,4.5,8.5,12,19000,500,1500,200,3500,22000,0.8,0.6,1.0,
+explosions.xtbl,Table,mp_quake,Entries:Multiplayer,5,9,0.1,0.1,2500,0,0,0,15,1500,1.0,1.0,1.0,
+explosions.xtbl,Table,thermo_rocket,Entries,6.5,7,9.5,20,50000,450,6000,1000,15000,40000,0.7,0.6,1.0,weapons.xtbl:thermobaric_rockets [Entries:Guerilla] Table; weapons.xtbl:thermobaric_rockets_debug [Entries:Other] Table
+explosions.xtbl,Table,gauss_rifle,Entries,0.85,1.4,1.45,0,6500,0,0,10,30,6500,0.1,0.5,0.5,weapons.xtbl:gauss_rifle [Entries:EDF] Table; weapons.xtbl:gauss_rifle [Entries:MP Overrides] Table
+explosions.xtbl,Table,Vehicle_Tanker,Entries,6,8,9,18,-1,300,4000,250,8000,30000,0.5,0.4,1.0,
+explosions.xtbl,Table,Vehicle_Art_Tank,Entries,6,8,9,18,-1,300,3000,250,8000,30000,0.5,0.4,1.0,
+explosions.xtbl,Table,gaussH2H,Entries,2,3,2.5,3.5,8000,600,2000,3000,8000,30000,0.4,0.2,1.0,weapons.xtbl:turret_gaussH2H [Entries:Turrets] Table
+explosions.xtbl,Table,mis_dfa_jail,Entries,2,2,0,0,40000,0,0,0,0,40000,0,0,1.0,
+explosions.xtbl,Table,missilepod,Entries,2.0,2.5,5.5,7.0,13000,1000,1500,200,2000,25000,0.5,0.1,1.0,weapons.xtbl:turret_missilepod [Entries:Turrets] Table; weapons.xtbl:turret_missilepod2 [Entries:Turrets] Table; weapons.xtbl:turret_rocket_rover2 [Entries:Turrets] Table; weapons.xtbl:turret_rocket_rover1 [Entries:Turrets] Table; weapons.xtbl:rpg_launcher [Entries:Guerilla] TableTemplates
+explosions.xtbl,Table,sat_rpg,Entries,3.0,3.5,6,10,30000,-1,-1,15000,40000,50000,0.0,1.0,1.0,weapons.xtbl:satellite_rpg [Entries:AirBomb] Table
+explosions.xtbl,Table,jetter_rocket_turret1,Entries,4,3,5,7,19000,0,1600,3000,6500,22000,0.8,0.2,1.0,weapons.xtbl:turret_jetter_rocket [Entries:Turrets] Table
+explosions.xtbl,Table,Small_Inviso_Bang,Entries,3,4,6,12,-1,-1,-1,500,5000,40000,1.0,1.0,1.0,
+explosions.xtbl,Table,Medium Inviso Bang,Entries,4.5,6,9,18,-1,-1,-1,1000,10000,50000,1.0,1.0,1.0,
+explosions.xtbl,Table,grinder_explosive,Entries,1.75,2.0,3.5,4.5,12000,800,1500,100,1200,14000,0.3,0.3,1.0,weapons.xtbl:grinder [Entries:Guerilla] Table
+explosions.xtbl,Table,chem_tank_a_demo,Entries:Props,7.5,9,11,18,-1,300,4000,250,10000,25000,0.8,0.8,1.0,
+explosions.xtbl,Table,ebs_singularity_bomb,Entries,2.5,3.5,7,15,-1,600,4000,1000,10000,30000,0.8,0.6,1.0,weapons.xtbl:singularity_bomb_EBS [Entries:EDF] Table
+explosions.xtbl,Table,marauder_shockade,Entries,4.5,5.0,6.0,8.5,5000,210,400,100,800,40000,0.5,0.3,0.6,weapons.xtbl:marauder_shockade [Entries:Marauder] Table
+explosions.xtbl,Table,large_walker_smash,Entries,2.5,4.5,6.5,10.5,25000,500,1000,200,2000,30000,0.1,0.1,0.5,
+explosions.xtbl,Table,small_walker_smash,Entries,2.0,4.0,4.5,7.5,20000,400,800,200,1500,15000,0.1,0.1,0.6,
+explosions.xtbl,Table,gauss_rifle_npc,Entries,0.7,1.3,1.35,0,5000,0,0,10,30,6000,0.1,0.5,0.5,dlc01_weapons.xtbl:EDF_Super_Gauss [Entries:EDF] Table
+explosions.xtbl,TableTemplates,cluster_bomb_exp,Entries,2,3.5,7,15,-1,-1,-1,250,1000,18000,1.0,1.0,1.0,
+explosions.xtbl,TableTemplates,Molotov Explosion,Entries,3,3,3,3,-1,-1,-1,0,0,0,1.0,1.0,1.0,
+explosions.xtbl,TableTemplates,Bruckheimer,Entries,2,3,0.0,0.0,-1,-1,-1,50,5000,20000,1.0,1.0,1.0,
+explosions.xtbl,TableTemplates,mortar_explosion,Entries,10,16,15,30,-1,-1,-1,2000,65000,40000,1.0,1.0,1.0,
+explosions.xtbl,TableTemplates,exp_vehicle_gastank1,Entries,3,4,5,10,-1,-1,-1,50,5000,20000,1.0,1.0,1.0,
+explosions.xtbl,TableTemplates,Explosion_PLACEHOLDER,Entries,1,2,1,1,-1,-1,-1,50,5000,16000,1.0,1.0,1.0,
+explosions.xtbl,TableTemplates,grenade_player_exp,Entries,1.0,4.0,6,12,-1,-1,-1,500,2000,15000,1.0,1.0,1.0,
+explosions.xtbl,TableTemplates,mp_ied_explosion,Entries,5,10,8,22,-1,-1,-1,300,900,22000,1.0,1.0,1.0,
+explosions.xtbl,TableTemplates,nano_rifle_exp_old,Entries,0.5,0,0.7,0.7,-1,-1,-1,1000,1000,10,1.0,1.0,1.0,
+explosions.xtbl,TableTemplates,nano_rifle_exp2_old,Entries,1.5,0,1.5,1.5,-1,-1,-1,1000,1000,500,1.0,1.0,1.0,
+explosions.xtbl,TableTemplates,rail_driver_exp,Entries,1,1,1.25,1.25,-1,-1,-1,50,500,9000,1.0,1.0,1.0,
+explosions.xtbl,TableTemplates,mp_commando,Entries:Multiplayer,1,1,2,15,-1,-1,-1,30,200,10000,1.0,1.0,1.0,
+explosions.xtbl,TableTemplates,mp_shockwave_activated,Entries:Multiplayer,4,4,6,6,-1,-1,-1,0,700,20000,1.0,1.0,1.0,
+explosions.xtbl,TableTemplates,mp_veh_mover_collision,Entries:Multiplayer,0,0,0,0,0,0,0,0,0,0,1.0,1.0,1.0,
+dlc01_explosions.xtbl,Table,propane_tank2,Entries,2,3.5,6,11,-1,250,1500,50,2500,19000,3.0,0.5,1.0,dlc01_weapons.xtbl:propane_tank2 [Entries:Other] Table
+dlc01_explosions.xtbl,Table,DLC_remote_charge,Entries,3.0,3.75,5.5,9.0,27000,250,1250,200,3000,30000,0.8,0.8,1.0,dlc01_weapons.xtbl:mar_charge_placer [Entries:Marauder] Table
+dlc01_explosions.xtbl,Table,DLC_marauder_shockade,Entries,4.5,5.0,6.0,8.5,22500,250,1250,200,3000,40000,0.8,0.8,1.0,
+dlc01_explosions.xtbl,Table,DLC_Gauss_mission3,Entries,2,3,2.5,3.5,8000,600,2000,3000,8000,30000,0.4,0.2,1.0,
+dlc01_explosions.xtbl,Table,DLC_turret_edf_rocket,Entries,5.5,5.0,7.5,12,25000,200,1000,0,3500,30000,.01,0.05,.25,dlc01_weapons.xtbl:DLC_turret_edfrocket_flyer [Entries:Turrets] Table
+dlc01_explosions.xtbl,Table,DLC_EDF_SuperRocket_Miss3,Entries,5.5,5.0,7.5,12,25000,600,2000,3000,8000,30000,0.4,0.2,1.0,dlc01_weapons.xtbl:Turret_EDF_rocket_Miss3 [Entries:Turrets] Table
+dlc01_explosions.xtbl,Table,DLC_missilepod,Entries,2.0,2.5,5.5,7.0,15000,500,1000,150,1500,25000,0.5,0.3,1.0,dlc01_weapons.xtbl:missilepod [Entries:Marauder] Table
+dlc01_explosions.xtbl,TableTemplates,DLC_test_splosion,Entries,3.5,4.0,6.5,10,22500,280,1700,200,3500,28000,0.6,0.7,1.0,
