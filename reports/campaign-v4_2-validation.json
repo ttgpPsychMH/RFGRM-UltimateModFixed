@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "game_runtime_tested": false,
+  "packages": {
+    "misc": {
+      "file_count": 1208,
+      "xml_valid": 422,
+      "unchanged_original_xml_exceptions": {
+        "credits.xtbl": "not well-formed (invalid token): line 41, column 21"
+      },
+      "changed_files_vs_v4_1": [
+        "explosions.xtbl",
+        "mp_backpack_overrides.xtbl",
+        "mp_backpacks.xtbl"
+      ],
+      "delta_fields_verified": 64,
+      "full_original_delta_verified": 1894,
+      "all_unselected_payloads_byte_identical": true,
+      "all_unselected_values_attributes_and_schema_preserved": true,
+      "unique_backpack_ids_preserved": true,
+      "no_new_min_max_violations": true,
+      "independent_raw_reader_passed": true,
+      "roundtrip_extraction_passed": true,
+      "no_added_backpack_unlock_or_npc_loadout": true
+    },
+    "table": {
+      "file_count": 423,
+      "xml_valid": 422,
+      "unchanged_original_xml_exceptions": {
+        "credits.xtbl": "not well-formed (invalid token): line 41, column 21"
+      },
+      "changed_files_vs_v4_1": [
+        "explosions.xtbl",
+        "mp_backpack_overrides.xtbl",
+        "mp_backpacks.xtbl"
+      ],
+      "delta_fields_verified": 64,
+      "full_original_delta_verified": 1471,
+      "all_unselected_payloads_byte_identical": true,
+      "all_unselected_values_attributes_and_schema_preserved": true,
+      "unique_backpack_ids_preserved": true,
+      "no_new_min_max_violations": true,
+      "independent_raw_reader_passed": true,
+      "roundtrip_extraction_passed": true,
+      "no_added_backpack_unlock_or_npc_loadout": true
+    }
+  },
+  "delta_fields_verified": 128,
+  "added_optional_fields_verified": 14,
+  "all_ten_backpacks_covered": true,
+  "fuel_override_consistency_checks": 24,
+  "theoretical_timing_is_not_runtime_validation": true,
+  "unverified_runtime_behavior": [
+    "Jetpack ceiling/lift",
+    "Fleetfoot actual speed cap",
+    "fuel capacity, active regen and upgrade multipliers",
+    "Heal on campaign NPCs",
+    "Stealth AI detection",
+    "Vision campaign targets",
+    "Rhino cancellation and distance"
+  ]
+}

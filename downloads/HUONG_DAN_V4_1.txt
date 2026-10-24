@@ -1,0 +1,98 @@
+ULTIMATE MOD — CAMPAIGN V4.1: BÚA MẠNH HƠN VÀ TIỆN ÍCH SALVAGE
+Red Faction Guerrilla Re-Mars-tered — offline
+
+CÀI ĐẶT
+1. Thoát game, sao lưu misc.vpp_pc và table.vpp_pc đang dùng.
+2. Giải nén ZIP V4.1; chép CẢ HAI VPP vào thư mục game chứa hai file
+   cùng tên, đồng ý thay thế. Đây là gói đầy đủ, không cần cài V4 trước.
+3. Hoàn tác bằng cách thoát game và chép lại bản sao lưu.
+4. Công cụ quản lý mod/RSL có thể ghi đè bảng hoặc hành vi runtime;
+   V4.1 không cài hoặc thay đổi tiện ích RSL nhảy cao/chạy riêng.
+
+THAY ĐỔI MỚI SO VỚI V4 — TÍNH TỪ ORIGINAL
+Chỉ 6 bảng thay đổi trong mỗi gói: melee, weapons, tweak_table và bản DLC.
+
+BÚA: NHÁNH ANIMSET PLAYER.XTBL
+- NPCDamage x10; VehicleDamage x20; StructureDamage x5.
+- DefaultDamage x5 theo đề xuất trước; đây là nhánh chung, không cộng với
+  damage NPC/xe/công trình. Các nhánh riêng ưu tiên theo xử lý của engine.
+- HitRange và SecondaryImpact/HitRange x1,25; HitRadius x1,25.
+  Tầm ngang/dọc 2 -> 2,5 m / 2,2 -> 2,75 m; bán kính chính 0,4 -> 0,5 m.
+- ImpactForce và RagdollImpulse x1,5.
+- Tính riêng từ original từng đòn thường/u1/u2/vàng; không nhân từ V4.
+- Giữ sát thương người chơi nhận, AwayImpulseScale, HitHeight, hướng,
+  animation timing, flags và liên kết nâng cấp theo V4.
+- Chỉ sửa trường đã có. small có DefaultDamage 150 -> 750; không tự thêm
+  các nhánh NPC/xe/công trình đang vắng. Nhánh animset NPC giữ V4.
+- Default_Refire_Delay bị engine bỏ qua với melee theo schema; không sửa
+  nó như cách tăng tốc vung. Cửa sổ va chạm và hoạt ảnh vẫn như trước.
+- Nhân vật DLC dùng Samanya.xtbl có Parent_Skeleton=Player; cần thử thực tế
+  đường kế thừa/chọn damage của engine, chưa cam kết mọi đòn DLC.
+
+DAMAGE BÚA V4.1 (NGANG / DỌC NẾU CÓ HAI SỐ)
+Thường: NPC 6500/7500; xe 5000; công trình 7500; DefaultDamage 7500.
+Nâng cấp 1: NPC 8500/9500; xe 7000; công trình 10000; DefaultDamage 10000.
+Nâng cấp 2: NPC 10500/11500; xe 9000; công trình 12500; DefaultDamage 12500.
+Vàng: NPC 21000/23000; xe 18000; công trình 25000; DefaultDamage 25000.
+Đây là giá trị cấu hình, không phải damage cuối đã đo sau giáp/difficulty.
+
+SALVAGE
+- Salvage_touch_delay_ms: 1000 -> 250 ms (0,25 giây).
+  Đây là thời gian chờ nhặt salvage mới sinh, không phải tốc độ hút đồ.
+- Player_death_salvage_percent_kept: 0,0 -> 1.
+  Mô tả trong dữ liệu: 1 là giữ toàn bộ salvage sau khi chết. Đây là mức
+  thử nghiệm được cho phép; chưa xác minh tương tác chết/load/save trong game.
+- Bán kính nhặt giữ gốc: chưa tìm được trường distance/radius rõ nghĩa
+  trong các bảng được cung cấp. Không đổi kích thước mesh/va chạm và không
+  nhầm Value=1 của nâng cấp salvage_collector thành bán kính một mét.
+- Không đổi lượng salvage rơi, giá trị vật liệu, thời gian spawn đồ hay
+  điều kiện mở khóa salvage_collector.
+
+SÚNG DỄ KIỂM SOÁT HƠN
+- Các giá trị dương Recoil_Kick, Spread_Min/Max, Spread_Fine_Aim_Min/Max
+  của súng cầm tay/launcher campaign được đưa về x0,8 original: giảm 20%.
+- Ví dụ M16: Recoil_Kick 0,9 -> 0,72; Spread_Min/Max 1/2,3 -> 0,8/1,84;
+  fine aim 0,7/1,1 -> 0,56/0,88. Theo schema spread là góc tính bằng độ.
+- Recoil_Kick là lực giật camera hướng lên chỉ cho người chơi theo schema.
+  Các trường NPC_Spread_Min/Max, RecoilImpulse, nhịp bắn/nạp, multiplier
+  chạy và To_Spread_Min/Max giữ V4. Giá trị 0 giữ 0; không thêm trường thiếu.
+- Không sửa preset rung camera khi đánh/nổ, đúng lựa chọn của người dùng.
+  Các vũ khí dùng chung hoặc nhánh thiếu NPC spread vẫn cần kiểm tra fallback
+  trong game; không cam kết AI hoàn toàn không bị ảnh hưởng gián tiếp.
+
+CẤU HÌNH NỀN V4 GIỮ LẠI
+- Alec HP 5500; giới hạn tốc độ 10 m/s; giảm sát thương/hồi phục mạnh kiểu V4.
+- NPC campaign chính: Guerilla/Civilian HP x3; EDF/Marauder x2; trang bị gốc.
+  DLC Marauder/tù nhân đồng minh x3, EDF x2; hai actor scripted Dan và
+  RFCommander DLC vẫn giữ HP gốc theo ngoại lệ V4.
+- Súng không có mẫu nổ: damage NPC/xe x3; súng có mẫu nổ dùng quy tắc nổ.
+- Remote/mine/RPG/Gauss/nano/grinder và mẫu DLC được chọn: damage NPC/xe
+  x2, công trình x1,5, các bán kính tác động dương x1,5. Thermobaric damage
+  x1,5, bán kính gốc 6,5 m. Mẫu nổ riêng môi trường/nhiệm vụ giữ V4.
+- Xe giữ giá trị V3 theo từng gói; nhóm tốc độ/động cơ được chọn x1,5,
+  HP được chọn x5. Ngưỡng đứng trên xe/ragdoll không đổi ở V4.1.
+- Tiếp viện delay /2, số quân và pool xe gốc; timer mục tiêu x3;
+  chỉ courier Escape_Speed /3; salvage reward rõ loại tiền x3;
+  đạn mang/tiếp tế x5, cỡ băng gốc; Cost mua/nâng cấp /2 làm tròn lên.
+- Giới hạn gắn remote cùng lúc, morale/control, các điều kiện mở khóa,
+  camera shake và các thông số ngoài phạm vi V4.1 giữ V4.
+
+KIỂM TRA VÀ GIỚI HẠN
+- Mỗi gói có 203 giá trị mới so V4; tổng 406, đếm cả bản sao ở hai gói.
+  Tổng so original là 3237 giá trị.
+- Đọc độc lập cấu trúc VPP, giải nén đối chiếu mọi payload; mọi XML sửa
+  hợp lệ; không có vi phạm min/max mới, gồm spread fine aim.
+- Giữ nguyên tập tên và số lượng tệp 1208/423; mọi nội dung ngoài phạm vi
+  và nhánh melee không phải Player.xtbl giữ V4.
+- Mỗi gói còn ký tự credits.xtbl không hợp lệ từ original, giữ nguyên byte.
+- Chưa chạy thử trong game. Búa phá công trình x5 và lực hất cao hơn có thể
+  làm sập nhà, hại con tin hoặc gây va chạm phụ. Bảo vệ Alec không bảo vệ
+  mục tiêu nhiệm vụ. Nên thử giải cứu/hộ tống/demolitions trên save phụ.
+
+SHA-256 FILE GAME V4.1
+5440347d5500aeb430b0bfb042e8d0c4a97fd66aae05e89ba8d1d925b4ad0818  misc.vpp_pc
+bf8f648e718704e83f5fa8579316ac28e92cacd87358b3b7d117e1552a357590  table.vpp_pc
+
+Báo cáo trên GitHub: reports/campaign-v4_1.md. ZIP báo cáo riêng có toàn bộ
+giá trị original/V4/V4.1, validation, policy, manifest và mã dựng.
+Các báo cáo mang tên V4 hoặc cũ hơn mô tả đúng phiên bản ghi trên tên.

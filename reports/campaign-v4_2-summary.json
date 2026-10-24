@@ -1,0 +1,44 @@
+{
+  "version": "Campaign V4.2 Backpacks",
+  "base_version": "Campaign V4.1",
+  "packages": [
+    {
+      "name": "misc",
+      "file_count": 1208,
+      "bytes": 101462516,
+      "sha256": "c62bfe7224a24f02f2ab910037904128dafe4d1907ba2d7af221d6e6e9172430",
+      "v4_1_sha256": "5440347d5500aeb430b0bfb042e8d0c4a97fd66aae05e89ba8d1d925b4ad0818"
+    },
+    {
+      "name": "table",
+      "file_count": 423,
+      "bytes": 22560866,
+      "sha256": "50915f809af4d001da0afeace91a27ced297fd2d1460590d415956e8cc60c595",
+      "v4_1_sha256": "bf8f648e718704e83f5fa8579316ac28e92cacd87358b3b7d117e1552a357590"
+    }
+  ],
+  "backpack_count": 10,
+  "changed_parameters_vs_v4_1": 128,
+  "added_override_fields": 14,
+  "changed_parameters_vs_original": 3365,
+  "changes_by_file": {
+    "mp_backpacks.xtbl": 100,
+    "mp_backpack_overrides.xtbl": 24,
+    "explosions.xtbl": 4
+  },
+  "changes_by_backpack": {
+    "Jetpack": 4,
+    "Fleetfoot": 12,
+    "Heal": 14,
+    "Rhino": 12,
+    "Thrust": 6,
+    "Tremor": 6,
+    "Shockwave": 10,
+    "Commando": 20,
+    "Vision": 20,
+    "Stealth": 20,
+    "mp_shockwave_blast": 2,
+    "mp_quake": 2
+  },
+  "game_runtime_tested": false
+}

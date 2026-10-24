@@ -1,0 +1,11 @@
+﻿name,display_name,fuel_use_per_second,fuel_regen_per_second,activation_cost,minimum_fuel_to_activate,model_full_fuel_active_seconds,model_empty_to_full_refill_seconds,model_activation_cost_refill_seconds,model_uses_from_full_fuel,model_assumptions
+Fleetfoot,Fleetfoot,0.04,0.4,0.02,0.1,24.5,2.5,0.05,,capacity=1; regeneration paused while active; no engine/upgrade modifiers; not measured
+Jetpack,Jetpack,0.075,0.5,0,0,13.333,2,0,,capacity=1; regeneration paused while active; no engine/upgrade modifiers; not measured
+Thrust,Thrust,0.8,0.5,0,0.25,1.25,2,0,,capacity=1; regeneration paused while active; no engine/upgrade modifiers; not measured
+Rhino,Rhino,0.5,0.5,0.0,0.25,2,2,0,,capacity=1; regeneration paused while active; no engine/upgrade modifiers; not measured
+Shockwave,Concussion,0,0.25,0.5,0.5,,4,2,2,capacity=1; regeneration paused while active; no engine/upgrade modifiers; not measured
+Tremor,Tremor,0.5,0.4,0,0.5,2,2.5,0,,capacity=1; regeneration paused while active; no engine/upgrade modifiers; not measured
+Commando,Firepower,0.05,0.4,0.00,0.25,20,2.5,0,,capacity=1; regeneration paused while active; no engine/upgrade modifiers; not measured
+Heal,Heal,0.05,0.4,0.02,0.1,19.6,2.5,0.05,,capacity=1; regeneration paused while active; no engine/upgrade modifiers; not measured
+Vision,Vision,0.035,0.4,0.02,0.1,28,2.5,0.05,,capacity=1; regeneration paused while active; no engine/upgrade modifiers; not measured
+Stealth,Stealth,0.033,0.4,0.02,0.1,29.697,2.5,0.05,,capacity=1; regeneration paused while active; no engine/upgrade modifiers; not measured

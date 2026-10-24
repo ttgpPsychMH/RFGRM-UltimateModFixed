@@ -1,98 +1,143 @@
-ULTIMATE MOD — CAMPAIGN V4.1: BÚA MẠNH HƠN VÀ TIỆN ÍCH SALVAGE
-Red Faction Guerrilla Re-Mars-tered — offline
+RFGRM — CAMPAIGN V4.2 BACKPACKS
+Red Faction Guerrilla Re-Mars-tered — chơi offline
 
-CÀI ĐẶT
-1. Thoát game, sao lưu misc.vpp_pc và table.vpp_pc đang dùng.
-2. Giải nén ZIP V4.1; chép CẢ HAI VPP vào thư mục game chứa hai file
-   cùng tên, đồng ý thay thế. Đây là gói đầy đủ, không cần cài V4 trước.
-3. Hoàn tác bằng cách thoát game và chép lại bản sao lưu.
-4. Công cụ quản lý mod/RSL có thể ghi đè bảng hoặc hành vi runtime;
-   V4.1 không cài hoặc thay đổi tiện ích RSL nhảy cao/chạy riêng.
+CÀI ĐẶT / HOÀN TÁC
+1. Thoát game; sao lưu misc.vpp_pc và table.vpp_pc đang dùng.
+2. Giải nén ZIP V4.2, chép CẢ HAI VPP vào thư mục game chứa hai file cùng
+   tên, đồng ý thay thế. Đây là gói đầy đủ, không cần cài V4/V4.1 trước.
+3. Muốn quay lại thì thoát game, chép lại bản sao lưu hoặc hai VPP từ ZIP V4.1.
+4. Mod manager/RSL có thể thay đổi thứ tự nạp hoặc hành vi runtime.
+   V4.2 không tự cài hook, plugin, RSL, mở khóa backpack hay trang bị cho NPC.
 
-THAY ĐỔI MỚI SO VỚI V4 — TÍNH TỪ ORIGINAL
-Chỉ 6 bảng thay đổi trong mỗi gói: melee, weapons, tweak_table và bản DLC.
+NỀN V4.1 GIỮ NGUYÊN
+Alec HP 5500 / giới hạn tốc độ cấu hình 10 m/s / bảo vệ mạnh; búa NPC x10,
+xe x20, công trình x5, DefaultDamage x5 original; tầm x1,25, lực x1,5;
+nhặt salvage chờ 250 ms, đặt giữ 100% salvage sau chết; giật/tản súng
+giảm 20%; các thiết lập NPC, nhiệm vụ, kinh tế, xe và vũ khí khác giữ V4.1.
+Những giới hạn runtime của V4.1, gồm giữ salvage sau chết, vẫn cần thử.
 
-BÚA: NHÁNH ANIMSET PLAYER.XTBL
-- NPCDamage x10; VehicleDamage x20; StructureDamage x5.
-- DefaultDamage x5 theo đề xuất trước; đây là nhánh chung, không cộng với
-  damage NPC/xe/công trình. Các nhánh riêng ưu tiên theo xử lý của engine.
-- HitRange và SecondaryImpact/HitRange x1,25; HitRadius x1,25.
-  Tầm ngang/dọc 2 -> 2,5 m / 2,2 -> 2,75 m; bán kính chính 0,4 -> 0,5 m.
-- ImpactForce và RagdollImpulse x1,5.
-- Tính riêng từ original từng đòn thường/u1/u2/vàng; không nhân từ V4.
-- Giữ sát thương người chơi nhận, AwayImpulseScale, HitHeight, hướng,
-  animation timing, flags và liên kết nâng cấp theo V4.
-- Chỉ sửa trường đã có. small có DefaultDamage 150 -> 750; không tự thêm
-  các nhánh NPC/xe/công trình đang vắng. Nhánh animset NPC giữ V4.
-- Default_Refire_Delay bị engine bỏ qua với melee theo schema; không sửa
-  nó như cách tăng tốc vung. Cửa sổ va chạm và hoạt ảnh vẫn như trước.
-- Nhân vật DLC dùng Samanya.xtbl có Parent_Skeleton=Player; cần thử thực tế
-  đường kế thừa/chọn damage của engine, chưa cam kết mọi đòn DLC.
+BACKPACKS ĐÃ CHỈNH
+Các giá trị dưới đây là cấu hình chính xác, không phải kết quả đã đo trong game.
 
-DAMAGE BÚA V4.1 (NGANG / DỌC NẾU CÓ HAI SỐ)
-Thường: NPC 6500/7500; xe 5000; công trình 7500; DefaultDamage 7500.
-Nâng cấp 1: NPC 8500/9500; xe 7000; công trình 10000; DefaultDamage 10000.
-Nâng cấp 2: NPC 10500/11500; xe 9000; công trình 12500; DefaultDamage 12500.
-Vàng: NPC 21000/23000; xe 18000; công trình 25000; DefaultDamage 25000.
-Đây là giá trị cấu hình, không phải damage cuối đã đo sau giáp/difficulty.
+JETPACK
+- jetpack/fuel_use_per_second: 0,3 -> 0,075.
+- jetpack/fuel_regen_per_second: 0,15 -> 0,5.
+- Chưa tìm được nút chỉnh lực nâng/giới hạn độ cao đã xác minh trong VPP.
+  Không thêm tag đoán tên. Bay lâu hơn không chứng minh bay cao hơn.
 
-SALVAGE
-- Salvage_touch_delay_ms: 1000 -> 250 ms (0,25 giây).
-  Đây là thời gian chờ nhặt salvage mới sinh, không phải tốc độ hút đồ.
-- Player_death_salvage_percent_kept: 0,0 -> 1.
-  Mô tả trong dữ liệu: 1 là giữ toàn bộ salvage sau khi chết. Đây là mức
-  thử nghiệm được cho phép; chưa xác minh tương tác chết/load/save trong game.
-- Bán kính nhặt giữ gốc: chưa tìm được trường distance/radius rõ nghĩa
-  trong các bảng được cung cấp. Không đổi kích thước mesh/va chạm và không
-  nhầm Value=1 của nâng cấp salvage_collector thành bán kính một mét.
-- Không đổi lượng salvage rơi, giá trị vật liệu, thời gian spawn đồ hay
-  điều kiện mở khóa salvage_collector.
+FLEETFOOT
+- Hệ số tốc độ active: 1,45 -> 2 (so lúc không bật backpack).
+- Tiêu hao/hồi mỗi giây: 0,04 / 0,4; phí bật 0,02; ngưỡng bật 0,1.
+- no_fine_aim=False: bỏ hạn chế fine aim của backpack khi active.
+  Animation/trạng thái sprint vẫn có thể hạn chế ngắm.
+- Mục tiêu khoảng 20 m/s trên nền 10 m/s; cần đo engine có nhân và cap ra sao.
 
-SÚNG DỄ KIỂM SOÁT HƠN
-- Các giá trị dương Recoil_Kick, Spread_Min/Max, Spread_Fine_Aim_Min/Max
-  của súng cầm tay/launcher campaign được đưa về x0,8 original: giảm 20%.
-- Ví dụ M16: Recoil_Kick 0,9 -> 0,72; Spread_Min/Max 1/2,3 -> 0,8/1,84;
-  fine aim 0,7/1,1 -> 0,56/0,88. Theo schema spread là góc tính bằng độ.
-- Recoil_Kick là lực giật camera hướng lên chỉ cho người chơi theo schema.
-  Các trường NPC_Spread_Min/Max, RecoilImpulse, nhịp bắn/nạp, multiplier
-  chạy và To_Spread_Min/Max giữ V4. Giá trị 0 giữ 0; không thêm trường thiếu.
-- Không sửa preset rung camera khi đánh/nổ, đúng lựa chọn của người dùng.
-  Các vũ khí dùng chung hoặc nhánh thiếu NPC spread vẫn cần kiểm tra fallback
-  trong game; không cam kết AI hoàn toàn không bị ảnh hưởng gián tiếp.
+HEAL
+- Hồi máu active 450 -> 900 HP/giây; radius 5,8 -> 10.
+- health_regen_heal_enemies: True -> False ở nhánh active.
+- Tiêu hao/hồi: 0,05 / 0,4; phí bật 0,02; ngưỡng bật 0,1.
+- Schema nói hồi cho players. Hồi NPC/đồng minh/con tin campaign chưa được
+  xác nhận; đây không phải cam kết đã tạo hệ thống cứu NPC bằng XML.
 
-CẤU HÌNH NỀN V4 GIỮ LẠI
-- Alec HP 5500; giới hạn tốc độ 10 m/s; giảm sát thương/hồi phục mạnh kiểu V4.
-- NPC campaign chính: Guerilla/Civilian HP x3; EDF/Marauder x2; trang bị gốc.
-  DLC Marauder/tù nhân đồng minh x3, EDF x2; hai actor scripted Dan và
-  RFCommander DLC vẫn giữ HP gốc theo ngoại lệ V4.
-- Súng không có mẫu nổ: damage NPC/xe x3; súng có mẫu nổ dùng quy tắc nổ.
-- Remote/mine/RPG/Gauss/nano/grinder và mẫu DLC được chọn: damage NPC/xe
-  x2, công trình x1,5, các bán kính tác động dương x1,5. Thermobaric damage
-  x1,5, bán kính gốc 6,5 m. Mẫu nổ riêng môi trường/nhiệm vụ giữ V4.
-- Xe giữ giá trị V3 theo từng gói; nhóm tốc độ/động cơ được chọn x1,5,
-  HP được chọn x5. Ngưỡng đứng trên xe/ragdoll không đổi ở V4.1.
-- Tiếp viện delay /2, số quân và pool xe gốc; timer mục tiêu x3;
-  chỉ courier Escape_Speed /3; salvage reward rõ loại tiền x3;
-  đạn mang/tiếp tế x5, cỡ băng gốc; Cost mua/nâng cấp /2 làm tròn lên.
-- Giới hạn gắn remote cùng lúc, morale/control, các điều kiện mở khóa,
-  camera shake và các thông số ngoài phạm vi V4.1 giữ V4.
+RHINO
+- charge_top_speed: 8,2 -> 14 m/s; trường rhino_top_speed cũ 8 -> 14.
+- Tiêu hao/hồi: 0,5 / 0,5; phí bật 0; ngưỡng bật 0,25.
+- player_deactivatable=True: cho phép chủ động hủy theo cấu hình.
+- Giữ bảo vệ active damage_taken_factor=0; không tăng damage phá công trình.
+- Quãng 28 m chỉ là 14 m/s x 2 s trong mô hình, chưa tính va chạm hoặc engine.
 
-KIỂM TRA VÀ GIỚI HẠN
-- Mỗi gói có 203 giá trị mới so V4; tổng 406, đếm cả bản sao ở hai gói.
-  Tổng so original là 3237 giá trị.
-- Đọc độc lập cấu trúc VPP, giải nén đối chiếu mọi payload; mọi XML sửa
-  hợp lệ; không có vi phạm min/max mới, gồm spread fine aim.
-- Giữ nguyên tập tên và số lượng tệp 1208/423; mọi nội dung ngoài phạm vi
-  và nhánh melee không phải Player.xtbl giữ V4.
-- Mỗi gói còn ký tự credits.xtbl không hợp lệ từ original, giữ nguyên byte.
-- Chưa chạy thử trong game. Búa phá công trình x5 và lực hất cao hơn có thể
-  làm sập nhà, hại con tin hoặc gây va chạm phụ. Bảo vệ Alec không bảo vệ
-  mục tiêu nhiệm vụ. Nên thử giải cứu/hộ tống/demolitions trên save phụ.
+THRUST
+- jump_boost_vertical: 10 -> 15 (thêm vào vận tốc theo mô tả schema).
+- Giữ tiêu hao 0,8; hồi 0,2 -> 0,5; ngưỡng bật 1 -> 0,25.
+- Giữ delay boost 180 ms, damage, vùng phá, animation và hành vi active khác.
+  x1,5 vận tốc boost không đồng nghĩa x1,5 chiều cao hoặc thời gian bay.
 
-SHA-256 FILE GAME V4.1
-5440347d5500aeb430b0bfb042e8d0c4a97fd66aae05e89ba8d1d925b4ad0818  misc.vpp_pc
-bf8f648e718704e83f5fa8579316ac28e92cacd87358b3b7d117e1552a357590  table.vpp_pc
+TREMOR
+- Tiêu hao 0,25 -> 0,5 để tạo đợt ngắn; hồi 0,12 -> 0,4; ngưỡng 1 -> 0,5.
+- Structural_Damage của mp_quake: 2500 -> 3750 mỗi xung.
+- Giữ khoảng giữa xung 300 ms, mọi bán kính, impulse và human damage.
+- Chủ đích tăng sức từng xung, rút ngắn đợt và hồi nhanh hơn; tổng sức phá
+  một đợt không tự suy từ x1,5 vì số xung và engine còn tham gia.
 
-Báo cáo trên GitHub: reports/campaign-v4_1.md. ZIP báo cáo riêng có toàn bộ
-giá trị original/V4/V4.1, validation, policy, manifest và mã dựng.
-Các báo cáo mang tên V4 hoặc cũ hơn mô tả đúng phiên bản ghi trên tên.
+CONCUSSION (TÊN DỮ LIỆU: SHOCKWAVE)
+- ripple_range: 6 -> 8; ripple_player_hit_speed: 12 -> 18.
+- Phí bật/ngưỡng bật 1 -> 0,5; hồi 0,22 -> 0,25; tiêu hao liên tục vẫn 0.
+- Structural_Damage mẫu nổ mp_shockwave_blast: 15000 -> 3000.
+- Giữ lực lên vật nặng/xe, các bán kính và impulse của vụ nổ, damage người.
+  Vẫn có thể phá vật yếu hoặc gây va chạm phụ, không bảo đảm an toàn con tin.
+
+FIREPOWER (TÊN DỮ LIỆU: COMMANDO)
+- direct_damage_dealt_factor: 1,25 -> 2.
+- area_damage_dealt_factor: 1,25 -> 1 để không thêm bonus lên nổ nền V4.1.
+- reload_speed_factor: 1 -> 0,7; nhịp bắn giữ 1; không thêm đạn vô hạn.
+- Tiêu hao/hồi: 0,05 / 0,4; phí bật 0; ngưỡng bật 0,25.
+- Hệ số direct=2 có thể cộng dồn với damage súng nền x3 -> x6 original
+  nếu engine dùng đường nhân này. Damage cuối và melee cần kiểm tra thực tế.
+
+VISION
+- Tiêu hao/hồi: 0,035 / 0,4; phí bật 0,02; ngưỡng bật 0,1.
+- Ramp vào/ra hiệu ứng: 250 -> 100 ms.
+- Không thêm khả năng xuyên đạn, tăng damage hoặc tự tìm con tin/nhiệm vụ.
+  Mục tiêu mà Vision phát hiện trong campaign chưa được kiểm thử.
+
+STEALTH
+- Tiêu hao/hồi: 0,033 / 0,4; phí bật 0,02; ngưỡng bật 0,1.
+- stealth_time_ms: 1000 -> 250; restealth_time_ms: 1000 -> 500.
+- Giữ mức hiển thị/ngụy trang gốc; không sửa trực tiếp hệ thống phát hiện AI.
+  Ngụy trang thị giác không chứng minh AI campaign bỏ qua nhân vật.
+
+BẢNG GHI ĐÈ
+Commando, Vision và Stealth có profile riêng trong mp_backpack_overrides.xtbl.
+V4.2 ghi rõ cả bốn trường fuel_use_per_second, fuel_regen_per_second,
+fuel_activation_cost và minimum_fuel_to_activate trong từng profile để đồng bộ
+với bảng chính. Có 7 trường optional mới mỗi gói, đều được schema hỗ trợ.
+Không thêm tên backpack, ID, asset, unlock hay đổi loadout NPC.
+Các trường cũ ngoài nhánh schema hiện tại giữ nguyên, trừ trường tốc độ Rhino
+cũ đã được chấp thuận đồng bộ với charge_top_speed.
+
+THỜI GIAN THEO MÔ HÌNH NHIÊN LIỆU — KHÔNG PHẢI ĐO TRONG GAME
+Giả định bình đầy=1; regen dừng khi active; không có modifier engine/nâng cấp.
+Nếu giả định sai, các thời gian này sẽ không đúng. Xem fuel-model.csv/json.
+Jetpack: khoảng 13,33 s sử dụng / 2 s từ rỗng tới đầy.
+Fleetfoot: 24,5 s / 2,5 s. Heal: 19,6 s / 2,5 s.
+Rhino: 2 s / 2 s. Thrust: cửa sổ tiêu hao 1,25 s / hồi 2 s,
+không phải mô tả độ cao/thời lượng quỹ đạo của cú phóng.
+Tremor: 2 s / 2,5 s. Firepower: 20 s / 2,5 s.
+Vision: 28 s / 2,5 s. Stealth: khoảng 29,7 s / 2,5 s.
+Concussion: năng lượng cho 2 lần từ đầy; hồi phần phí một lần khoảng 2 s;
+từ rỗng tới đầy khoảng 4 s. Animation/logic có thể giới hạn nhịp thực tế.
+Các loại có ngưỡng dưới 1 cho phép bật trước khi đầy và dùng ngắn hơn.
+
+KIỂM TRA ĐÃ ĐẠT
+- 128 thay đổi trên hai gói: mỗi gói 64, bao gồm 7 trường override optional mới.
+- Chỉ 3 bảng mỗi gói đổi: mp_backpacks.xtbl, mp_backpack_overrides.xtbl,
+  explosions.xtbl (chỉ hai trường damage công trình của hai mẫu đã chọn).
+- Giữ nguyên 1208/423 tệp; đọc VPP độc lập kiểm tra header, hash tên, offset,
+  chiều dài, padding; giải nén đối chiếu toàn bộ 1631 payload.
+- Validator riêng dùng ElementTree, không import patcher; kiểm tra từng
+  route và giá trị, mọi nội dung ngoài phạm vi, ID 0..9, schema và kiểu dữ liệu.
+- 24 đối chiếu fuel giữa bảng chính/override đều khớp; không có lỗi min/max mới.
+- Đối chiếu toàn bộ 3365 giá trị khác original, gồm tất cả thay đổi V4.1 cũ.
+- credits.xtbl giữ ký tự lỗi XML có sẵn từ original; mọi XML sửa hợp lệ.
+
+GIỚI HẠN VÀ CÁCH THỬ
+Chưa chạy thử trong game. Những giá trị được xác nhận là dữ liệu đóng gói,
+không phải cam kết về độ cao, tốc độ, thời gian thực hoặc hỗ trợ NPC.
+Đây là bảng dùng chung với MP/Wrecking Crew; bản mod dành cho offline.
+- Dùng save phụ, thử ở khu vực trống trước khi chơi nhiệm vụ giải cứu/hộ tống.
+- Jetpack: từ đầy bình, đo thời gian bay/hồi, kiểm tra có trần độ cao và
+  regen khi active hay không. Nâng cấp trong save có thể thay đổi kết quả.
+- Fleetfoot: so tốc độ trên cùng một đoạn đường khi bật/tắt, thử fine aim.
+- Rhino: thử quãng lao và hủy bằng nút backpack đã gán ở chỗ không có mục tiêu.
+- Heal: thử bản thân và NPC bị thương ngoài nhiệm vụ nếu có cách quan sát HP;
+  không coi hồi NPC đã hoạt động chỉ từ vòng hiệu ứng hiện ra.
+- Stealth/Vision: kiểm tra phản ứng AI/đối tượng phát hiện; hiệu ứng hình ảnh
+  không đủ chứng minh gameplay. Thử các backpack phá hủy xa con tin.
+- Không tự mở khóa; backpack chưa xuất hiện vẫn theo trạng thái tiến trình V4.1.
+
+SHA-256 FILE GAME
+c62bfe7224a24f02f2ab910037904128dafe4d1907ba2d7af221d6e6e9172430  misc.vpp_pc
+50915f809af4d001da0afeace91a27ced297fd2d1460590d415956e8cc60c595  table.vpp_pc
+
+Chi tiết GitHub: reports/campaign-v4_2.md. ZIP báo cáo riêng gồm profile,
+delta V4.1->V4.2, toàn bộ original->V4.2, mô hình fuel, validator và mã dựng.

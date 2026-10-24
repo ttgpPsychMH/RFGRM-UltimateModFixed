@@ -1,7 +1,7 @@
 # Campaign V4.1 — búa mạnh hơn, nhặt salvage nhanh và súng dễ kiểm soát
 
 **[Tải V4.1 đầy đủ](../downloads/Ultimate_Mod_Campaign_v4_1.zip)** ·
-[Hướng dẫn](../downloads/HUONG_DAN.txt) · [Báo cáo/mã dựng ZIP](../downloads/Ultimate_Mod_Campaign_v4_1_Reports.zip).
+[Hướng dẫn](../downloads/HUONG_DAN_V4_1.txt) · [Báo cáo/mã dựng ZIP](../downloads/Ultimate_Mod_Campaign_v4_1_Reports.zip).
 
 V4.1 dùng V4 đã phát hành làm nền. Mọi hệ số búa tính từ **original từng
 đòn**, không nhân từ V4. Chỉ sáu bảng mỗi gói thay đổi; các phần khác giữ V4.
