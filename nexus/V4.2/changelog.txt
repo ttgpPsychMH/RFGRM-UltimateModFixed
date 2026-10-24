@@ -1,0 +1,16 @@
+Version 4.2 - Backpack update
+
+- Retuned all ten existing backpack profiles for longer utility use, faster recovery or shorter controlled bursts.
+- Synchronized all four supported fuel fields in the Commando, Vision and Stealth overrides.
+- Lowered Jetpack fuel consumption and increased regeneration.
+- Set Fleetfoot's active movement multiplier to 2.0 and removed its fine-aim restriction.
+- Increased Heal's active rate/radius and disabled its active enemy-healing flag.
+- Increased Rhino's configured charge speed and enabled player-controlled cancellation.
+- Increased Thrust's vertical velocity boost.
+- Increased Tremor structural damage per pulse while shortening its fuel-driven burst.
+- Increased Concussion push range/character knockback and reduced its associated structural blast damage.
+- Increased Firepower's direct-damage bonus and reduced its reload-duration factor, with no extra area-damage multiplier.
+- Extended Vision/Stealth fuel budgets and shortened their relevant visual/cloaking transitions.
+- Preserved the V4.1 campaign, hammer, firearm, NPC, vehicle, activity, economy and salvage settings outside the backpack patch.
+- Verified 128 changes across both archives, including 14 added optional fuel fields.
+- Completed independent archive/data validation. In-game testing remains pending.

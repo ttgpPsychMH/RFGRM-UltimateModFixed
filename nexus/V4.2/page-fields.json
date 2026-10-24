@@ -1,0 +1,14 @@
+{
+  "game": "Red Faction Guerrilla Re-Mars-tered",
+  "mod_name": "Godlike Campaign Overhaul - Hammer and Backpacks",
+  "version": "4.2",
+  "short_description": "An overpowered offline campaign overhaul for Red Faction Guerrilla Re-Mars-tered: tougher Alec, a stronger hammer, retuned backpacks, more ammo and cheaper upgrades. Includes both VPP archives. Archive and data checks passed; gameplay testing is still needed.",
+  "main_file_name": "Godlike Campaign Overhaul 4.2 - Full Package",
+  "main_file_archive": "Ultimate_Mod_Campaign_v4_2.zip",
+  "main_file_description": "Full V4.2 package: misc.vpp_pc, table.vpp_pc, a Vietnamese installation guide and SHA-256 checksums. Back up and replace both archives manually. No earlier release required. Gameplay testing is still pending; read the mod page before installing.",
+  "optional_file_name": "V4.2 Reports and Build Scripts",
+  "optional_file_archive": "Ultimate_Mod_Campaign_v4_2_Reports.zip",
+  "optional_file_description": "Optional parameter inventories, validation reports, theoretical fuel calculations and build/verification scripts. Not required to play.",
+  "additional_mod_requirements": "None for the VPP package. The separate RSL jump addon is not included or required.",
+  "publication_status": "Draft for manual Nexus Mods submission; not posted to Nexus by this task."
+}
