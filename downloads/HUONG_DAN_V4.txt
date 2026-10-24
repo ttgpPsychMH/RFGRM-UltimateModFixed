@@ -1,0 +1,116 @@
+ULTIMATE MOD — CAMPAIGN V4: DỰNG LẠI TỪ ORIGINAL
+Game: Red Faction Guerrilla Re-Mars-tered, chơi offline
+
+CÀI ĐẶT
+1. Thoát game. Sao lưu misc.vpp_pc và table.vpp_pc đang dùng.
+2. Giải nén ZIP V4 và chép CẢ HAI FILE VPP vào thư mục game có hai file
+   cùng tên, đồng ý thay thế. Không cần cài V2/V3 trước.
+3. Muốn hoàn tác: thoát game, chép lại hai file đã sao lưu.
+4. Nếu dùng công cụ quản lý mod ghi đè các bảng này, kiểm tra thứ tự nạp.
+   V4 không cài hoặc thay đổi tiện ích RSL nhảy cao/chạy riêng.
+
+CẤU HÌNH V4 — HỆ SỐ TÍNH TỪ ORIGINAL
+- Alec: HP 550 -> 5500; giới hạn tốc độ 5 -> 10 m/s;
+  chống gục x10, các hệ số giảm sát thương/hồi phục kiểu V3.
+  Sát thương vũ khí/cận chiến tới người chơi /20 ở các trường dương
+  thuộc bản campaign; difficulty damage taken và falling damage /20.
+  Regen delay /10, regen rate x10, bảo vệ xe người chơi giữ mạnh.
+  Đây là cấu hình gần bất khả xâm phạm; không vô hiệu hóa script thất bại.
+- NPC campaign chính: Guerilla/Civilian HP x3; EDF/Marauder HP x2.
+  Trang bị, tên súng, đội quân, pool xe spawn và cờ AI giữ ORIGINAL.
+- Búa: chỉ tăng sát thương tấn công của AnimSet Player.xtbl.
+  DefaultDamage/NPCDamage/VehicleDamage x3; StructureDamage x2.
+  Tầm đánh, lực hất và liên kết búa/nâng cấp/vàng giữ ORIGINAL.
+  StructureDamage thường/u1/u2/vàng: 3000 / 4000 / 5000 / 10000.
+- Súng cầm tay không có mẫu nổ: NPC_Damage và Vehicle_Damage x3.
+  Súng có mẫu nổ (Gauss/nano/grinder) ưu tiên hệ số nổ thấp hơn bên dưới.
+  Không tăng nhịp bắn, giảm nạp đạn, độ giật hay tăng tốc độ đạn.
+- Remote, mine, RPG và các mẫu nổ súng cầm tay được chọn:
+  sát thương NPC/xe x2, sát thương công trình x1,5;
+  Radius/CrumbleRadius/KnockdownRadius dương x1,5.
+  KnockdownRadius ở bảng này cũng là mốc ngoài của sát thương người.
+  Remote Radius 3 -> 4,5 m; RPG 3,65 -> 5,475 m.
+- Thermobaric: sát thương NPC/xe/công trình x1,5; giữ các bán kính gốc,
+  gồm bán kính chính 6,5 m. Không tăng thêm theo quy tắc damage súng x3.
+  Sát thương va chạm và sát thương vùng là hai phần độc lập; mỗi trường
+  chỉ được nhân một lần, không tạo hệ số x3 rồi nhân x2.
+- Lực nổ Impulse, FlinchRadius, hiệu ứng, cơ chế kích nổ và ID giữ gốc.
+  Mẫu nổ riêng của môi trường, nhiệm vụ, xe tăng và thiết bị NPC giữ gốc.
+  Ngoại lệ dùng chung: một số turret tham chiếu mẫu remote/rocket cũng
+  nhận thay đổi của mẫu đó. Không tách mẫu nổ hay tuyên bố chỉ Alec mạnh.
+- Xe: giữ đúng giá trị V3 trong từng gói; 349 trường tốc độ/động cơ x1,5,
+  73 trường HP x5, một ngưỡng tốc độ cho phép đánh lái hết góc giữ x3.
+  Đây là các trường V3 đã chọn trong misc, không phải tất cả xe.
+  vehicles.xtbl trong table vẫn là original, đúng phạm vi V3 trước đây.
+- Tiếp viện: delay dương /2 trong raid, house arrest, profile EDF và viện
+  binh đồng minh. Không tăng số quân, đổi đội hình hoặc loại xe.
+- Hoạt động: thời gian hoàn thành, par time, thời gian rời xe cho phép,
+  demolitions Time_Limit, thời gian trước khi EDF giết con tin x3.
+  Mayhem Time_per_score x3. Không đổi ngưỡng chuyển pha tấn công của
+  area defense, thời gian nạp asset hoặc thời gian restoration.
+- Courier: chỉ Escape_Speed /3; 40 -> 14 và 25 -> 9 vì trường số nguyên.
+  Các tốc độ Normal/Evade/Catch_Up và số mục tiêu cần hạ giữ gốc.
+- Phần thưởng salvage: trường Salvage_Reward dương x3.
+  Morale, giảm EDF control, bảng giá trị salvage rơi từ vật liệu và các
+  trường Reward không rõ loại tiền giữ gốc, tránh tác động mở khóa.
+- Đạn: Max_Rounds/Max_Rounds_Upgrade, Ammo_Box_Restock, Num_Magazines
+  và Ammo của demolitions x5; Magazine_Size giữ gốc.
+  Remote mang được 90, nâng cấp 150; giới hạn gắn đồng thời giữ tiến
+  trình nâng cấp gốc. Không thêm cờ đạn vô hạn; hệ số pickup difficulty
+  giữ gốc để không nhân tiếp thành x25.
+- Chi phí mua/nâng cấp: Cost dương /2, số nguyên làm tròn lên.
+  25 -> 13; giá 1 vẫn là 1; 0 giữ 0. Không nhân giảm lần hai qua difficulty.
+  Không mở khóa sớm, sửa giá trị cấp nâng cấp hoặc đổi điều kiện nhiệm vụ.
+
+PHẠM VI VÀ NGOẠI LỆ
+- Dựng từ hai BACKUP mới nhất đã xác minh SHA-256. Không lấy thay đổi
+  loadout, tên đội không hợp lệ hoặc dữ liệu lỗi từ Nexus/V3.
+  Chỉ giá trị xe được lấy đúng từ V3 theo yêu cầu.
+- Các bảng trùng trong misc/table có giá trị V4 giống nhau, trừ vehicles
+  cố ý giữ phạm vi riêng V3. Còn phụ thuộc thứ tự nạp xe của engine.
+- DLC offline: player rfg_PC_DLC cùng HP/tốc độ/bảo vệ; Marauder là phe
+  nhân vật chính nên HP x3, EDF x2, tù nhân Guerilla x3.
+  mis_DLC_Dan và mis_DLC_RFCommander giữ HP gốc vì là nhân vật scripted,
+  không suy đoán phe thực tế chỉ từ nhãn Team. Các script có thể đổi phe.
+- Không chủ đích sửa entry MP/test, template/editor hay online settings;
+  giữ ngoại lệ dữ liệu xe V3. Một số định nghĩa vẫn dùng chung với MP;
+  đây không phải bản đã kiểm thử hay khuyến nghị cho multiplayer.
+- 0, -1 và các cờ đặc biệt được giữ. Trường số nguyên luôn làm tròn lên.
+  Trường vắng mặt dùng mặc định gốc; không thêm tag hoặc sửa schema.
+
+ẢNH HƯỞNG KHI CHƠI
+- Đồng minh khỏe hơn nhưng vẫn có thể chết do friendly fire, xe đâm,
+  nhà sập hoặc script. Bảo vệ Alec không bảo vệ mục tiêu nhiệm vụ.
+- Sát thương súng dùng chung có thể tăng cho NPC cầm cùng loại súng.
+  Trang bị gốc không có nghĩa sát thương súng của mọi NPC vẫn như gốc.
+- Bán kính x1,5 bao phủ diện tích hình tròn lý thuyết x2,25; phá công trình
+  x1,5 và búa phá x2 vẫn cần cẩn thận sát con tin/mục tiêu hộ tống.
+  Vùng sát thương ngoài của remote là 8,25 m, của mine 14,25 m; Radius
+  chính không phải ranh giới tuyệt đối của mọi hiệu ứng nổ.
+- Quân tới nhanh hơn /2 có thể tăng giao tranh và tải CPU. Số lượng mỗi
+  đợt giữ gốc; không đảm bảo số quân tồn tại đồng thời vẫn bằng gốc.
+- Xe thuộc nhóm HP x5 của V3, kể cả xe địch, sẽ bền hơn tương đối so với
+  súng x3 và nổ x2. Đây là hệ quả của việc giữ nguyên cấu hình xe V3.
+- Tốc độ 10 m/s là giới hạn dữ liệu, không phải cam kết mọi trạng thái
+  walking/running/sprinting đều di chuyển 10 m/s hoặc tỷ lệ mới riêng.
+
+KIỂM TRA
+- misc: 1208 tệp; table: 423 tệp, không thêm/xóa tệp.
+- Đối chiếu 2947 giá trị số từ original; misc sửa 27 bảng, table 26.
+- Đọc độc lập cấu trúc VPP: header, hash tên, offset, alignment, padding,
+  chiều dài; giải nén đối chiếu toàn bộ 1631 payload.
+- Cấu trúc XML, mọi tên/tham chiếu/cờ và nội dung ngoài phạm vi giữ gốc;
+  tất cả XML đã sửa hợp lệ; không có vi phạm min/max mới.
+- Mỗi gói giữ nguyên lỗi ký tự credits.xtbl có sẵn ở original;
+  422/423 XTBL parse được. Không âm thầm sửa dữ liệu ngoài phạm vi.
+- Chưa chạy thử trong game. Kiểm tra dữ liệu không xác nhận toàn bộ nhiệm
+  vụ, cảm giác điều khiển, thứ tự nạp, FPS hay vật lý của engine.
+  Nên thử nhiệm vụ giải cứu, hộ tống, demolitions và lái xe trên save phụ
+  trước khi dùng làm bản chơi chính.
+
+SHA-256 CỦA FILE V4
+bd2cec4003673b44a1f17c7319986ccc78ea365ad95b11c0a7dffa01735a5982  misc.vpp_pc
+839985e20922972c70f8d0c8bb9bd6f82e575b1657ab58ecfe582733c3ce867b  table.vpp_pc
+
+Báo cáo riêng chứa toàn bộ thay đổi original -> V4, policy, validation,
+manifest và mã dựng bản mod. Các báo cáo V3 cũ chỉ mô tả bản V3.

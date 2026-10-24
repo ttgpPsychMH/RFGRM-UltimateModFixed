@@ -1,0 +1,224 @@
+{
+  "status": "passed",
+  "game_runtime_tested": false,
+  "packages": {
+    "misc": {
+      "file_count": 1208,
+      "xml_valid": 422,
+      "unchanged_original_xml_exceptions": {
+        "credits.xtbl": "not well-formed (invalid token): line 41, column 21"
+      },
+      "changed_files_vs_v4": [
+        "dlc01_melee.xtbl",
+        "dlc01_tweak_table.xtbl",
+        "dlc01_weapons.xtbl",
+        "melee.xtbl",
+        "tweak_table.xtbl",
+        "weapons.xtbl"
+      ],
+      "numeric_delta_verified": 203,
+      "full_original_delta_verified": 1830,
+      "fine_aim_pairs_checked": 44,
+      "no_new_min_max_violations": true,
+      "roundtrip_passed": true,
+      "independent_reader_passed": true,
+      "all_unselected_payloads_and_xml_values_preserved": true,
+      "nonplayer_hammer_branches_preserved": true,
+      "camera_shake_remote_limits_vehicle_settings_preserved": true
+    },
+    "table": {
+      "file_count": 423,
+      "xml_valid": 422,
+      "unchanged_original_xml_exceptions": {
+        "credits.xtbl": "not well-formed (invalid token): line 41, column 21"
+      },
+      "changed_files_vs_v4": [
+        "dlc01_melee.xtbl",
+        "dlc01_tweak_table.xtbl",
+        "dlc01_weapons.xtbl",
+        "melee.xtbl",
+        "tweak_table.xtbl",
+        "weapons.xtbl"
+      ],
+      "numeric_delta_verified": 203,
+      "full_original_delta_verified": 1407,
+      "fine_aim_pairs_checked": 44,
+      "no_new_min_max_violations": true,
+      "roundtrip_passed": true,
+      "independent_reader_passed": true,
+      "all_unselected_payloads_and_xml_values_preserved": true,
+      "nonplayer_hammer_branches_preserved": true,
+      "camera_shake_remote_limits_vehicle_settings_preserved": true
+    }
+  },
+  "representative_checks": [
+    {
+      "package": "misc",
+      "file": "melee.xtbl",
+      "xpath": "./Table/MeleeMove[Name='sledgehammer_melee_vert']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']/Damage/NPCDamage",
+      "value": "7500"
+    },
+    {
+      "package": "table",
+      "file": "melee.xtbl",
+      "xpath": "./Table/MeleeMove[Name='sledgehammer_melee_vert']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']/Damage/NPCDamage",
+      "value": "7500"
+    },
+    {
+      "package": "misc",
+      "file": "melee.xtbl",
+      "xpath": "./Table/MeleeMove[Name='sledgehammer_melee_vert']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']/Damage/VehicleDamage",
+      "value": "5000"
+    },
+    {
+      "package": "table",
+      "file": "melee.xtbl",
+      "xpath": "./Table/MeleeMove[Name='sledgehammer_melee_vert']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']/Damage/VehicleDamage",
+      "value": "5000"
+    },
+    {
+      "package": "misc",
+      "file": "melee.xtbl",
+      "xpath": "./Table/MeleeMove[Name='sledgehammer_melee_vert']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']/Damage/StructureDamage",
+      "value": "7500"
+    },
+    {
+      "package": "table",
+      "file": "melee.xtbl",
+      "xpath": "./Table/MeleeMove[Name='sledgehammer_melee_vert']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']/Damage/StructureDamage",
+      "value": "7500"
+    },
+    {
+      "package": "misc",
+      "file": "melee.xtbl",
+      "xpath": "./Table/MeleeMove[Name='sledgehammer_melee_vert']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']/Damage/DefaultDamage",
+      "value": "7500"
+    },
+    {
+      "package": "table",
+      "file": "melee.xtbl",
+      "xpath": "./Table/MeleeMove[Name='sledgehammer_melee_vert']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']/Damage/DefaultDamage",
+      "value": "7500"
+    },
+    {
+      "package": "misc",
+      "file": "melee.xtbl",
+      "xpath": "./Table/MeleeMove[Name='sledgehammer_melee_vert']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']/Damage/PlayerDamageFromNPC",
+      "value": "37.5"
+    },
+    {
+      "package": "table",
+      "file": "melee.xtbl",
+      "xpath": "./Table/MeleeMove[Name='sledgehammer_melee_vert']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']/Damage/PlayerDamageFromNPC",
+      "value": "37.5"
+    },
+    {
+      "package": "misc",
+      "file": "melee.xtbl",
+      "xpath": "./Table/MeleeMove[Name='sledgehammer_melee_vert']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']/HitRange",
+      "value": "2.75"
+    },
+    {
+      "package": "table",
+      "file": "melee.xtbl",
+      "xpath": "./Table/MeleeMove[Name='sledgehammer_melee_vert']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']/HitRange",
+      "value": "2.75"
+    },
+    {
+      "package": "misc",
+      "file": "melee.xtbl",
+      "xpath": "./Table/MeleeMove[Name='sledgehammer_melee_vert']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']/HitRadius",
+      "value": "0.5"
+    },
+    {
+      "package": "table",
+      "file": "melee.xtbl",
+      "xpath": "./Table/MeleeMove[Name='sledgehammer_melee_vert']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']/HitRadius",
+      "value": "0.5"
+    },
+    {
+      "package": "misc",
+      "file": "melee.xtbl",
+      "xpath": "./Table/MeleeMove[Name='sledgehammer_melee_vert']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']/SecondaryImpact/HitRange",
+      "value": "2.5"
+    },
+    {
+      "package": "table",
+      "file": "melee.xtbl",
+      "xpath": "./Table/MeleeMove[Name='sledgehammer_melee_vert']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']/SecondaryImpact/HitRange",
+      "value": "2.5"
+    },
+    {
+      "package": "misc",
+      "file": "melee.xtbl",
+      "xpath": "./Table/MeleeMove[Name='sledgehammer_melee_vert']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']/ImpactForce",
+      "value": "450"
+    },
+    {
+      "package": "table",
+      "file": "melee.xtbl",
+      "xpath": "./Table/MeleeMove[Name='sledgehammer_melee_vert']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']/ImpactForce",
+      "value": "450"
+    },
+    {
+      "package": "misc",
+      "file": "melee.xtbl",
+      "xpath": "./Table/MeleeMove[Name='sledgehammer_melee_vert']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']/RagdollImpulse",
+      "value": "120"
+    },
+    {
+      "package": "table",
+      "file": "melee.xtbl",
+      "xpath": "./Table/MeleeMove[Name='sledgehammer_melee_vert']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']/RagdollImpulse",
+      "value": "120"
+    },
+    {
+      "package": "misc",
+      "file": "melee.xtbl",
+      "xpath": "./Table/MeleeMove[Name='sledgehammer_melee_vert']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']/AwayImpulseScale",
+      "value": "1.0"
+    },
+    {
+      "package": "table",
+      "file": "melee.xtbl",
+      "xpath": "./Table/MeleeMove[Name='sledgehammer_melee_vert']/MoveDataList/AnimSet[AnimSetName='Player.xtbl']/AwayImpulseScale",
+      "value": "1.0"
+    },
+    {
+      "package": "misc",
+      "file": "tweak_table.xtbl",
+      "xpath": "./Table/Tweak_Table_Entry[Name='Salvage_touch_delay_ms']/Value",
+      "value": "250"
+    },
+    {
+      "package": "table",
+      "file": "tweak_table.xtbl",
+      "xpath": "./Table/Tweak_Table_Entry[Name='Salvage_touch_delay_ms']/Value",
+      "value": "250"
+    },
+    {
+      "package": "misc",
+      "file": "tweak_table.xtbl",
+      "xpath": "./Table/Tweak_Table_Entry[Name='Player_death_salvage_percent_kept']/Value",
+      "value": "1"
+    },
+    {
+      "package": "table",
+      "file": "tweak_table.xtbl",
+      "xpath": "./Table/Tweak_Table_Entry[Name='Player_death_salvage_percent_kept']/Value",
+      "value": "1"
+    },
+    {
+      "package": "misc",
+      "file": "character.xtbl",
+      "xpath": "./Table/Character[Name='rfg_PC']/max_speed",
+      "value": "10"
+    },
+    {
+      "package": "table",
+      "file": "character.xtbl",
+      "xpath": "./Table/Character[Name='rfg_PC']/max_speed",
+      "value": "10"
+    }
+  ]
+}

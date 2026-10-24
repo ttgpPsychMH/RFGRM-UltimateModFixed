@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "artifacts": {
+    "Ultimate_Mod_Campaign_v4_1.zip": {
+      "bytes": 16802808,
+      "sha256": "90b4d2c9ff83196eefae56df68bc74208aafc85fb88f36f31de43ac59a20cf3f",
+      "zip_crc_passed": true
+    },
+    "Ultimate_Mod_Campaign_v4_1_Reports.zip": {
+      "bytes": 308762,
+      "sha256": "8d42eca3d51b5ccc2d989418851a1d2097cd288225841eae18136044871fb10d",
+      "zip_crc_passed": true
+    }
+  },
+  "historical_v4_zips_unchanged": true,
+  "game_runtime_tested": false
+}

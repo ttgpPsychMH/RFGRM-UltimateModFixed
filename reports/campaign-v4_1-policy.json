@@ -1,0 +1,146 @@
+{
+  "version": "Campaign V4.1",
+  "built_from_originals": true,
+  "player": {
+    "hp_factor": 10,
+    "max_speed_mps": 10,
+    "knockdown_hits_factor": 10,
+    "weapon_melee_incoming_factor": "1/20",
+    "difficulty_incoming_and_falling_factor": "1/20",
+    "regen_delay_factor": "1/10",
+    "regen_rate_factor": 10,
+    "vehicle_difficulty_and_collision_factor": "1/10"
+  },
+  "npc_hp": {
+    "campaign_allies": 3,
+    "campaign_enemies": 2,
+    "base_allies": [
+      "Guerilla",
+      "Civilian"
+    ],
+    "base_enemies": [
+      "EDF",
+      "Marauder"
+    ],
+    "dlc_allies": [
+      "Marauder",
+      "Civilian",
+      "Guerrilla prisoners"
+    ],
+    "dlc_enemies": [
+      "EDF"
+    ],
+    "dlc_scripted_actors_preserved": [
+      "mis_DLC_Dan",
+      "mis_DLC_RFCommander"
+    ]
+  },
+  "npc_loadouts": "original",
+  "weapons_nonexplosive_handheld_npc_vehicle_damage_factor": 3,
+  "hammer_player_animset": {
+    "npc_damage_factor": 10,
+    "vehicle_damage_factor": 20,
+    "structural_damage_factor": 5,
+    "default_damage_factor": 5,
+    "hit_range_and_secondary_hit_range_factor": 1.25,
+    "hit_radius_factor": 1.25,
+    "impact_force_and_ragdoll_impulse_factor": 1.5,
+    "factor_basis": "original value of each move, not V4",
+    "scope": "existing fields in Player.xtbl animsets of sledgehammer_melee_*; base and DLC",
+    "incoming_player_damage_away_impulse_height_direction_flags_and_timing": "preserve V4",
+    "missing_fields": "do not add missing NPC/vehicle/structure fields to small attack"
+  },
+  "ordinary_explosives": {
+    "blast_crumble_human_falloff_radii_factor": 1.5,
+    "npc_vehicle_damage_factor": 2,
+    "structural_damage_factor": 1.5,
+    "direct_impact_factor": 2,
+    "names": [
+      "remote_charge",
+      "mine",
+      "rocket",
+      "gauss_rifle",
+      "gauss_rifle_npc",
+      "nano_rifle_exp",
+      "grinder_explosive",
+      "DLC_remote_charge",
+      "DLC_missilepod"
+    ]
+  },
+  "thermobaric": {
+    "radii_factor": 1,
+    "npc_vehicle_and_structural_damage_factor": 1.5,
+    "direct_impact_factor": 1.5
+  },
+  "explosion_preserved_fields": [
+    "Impulse",
+    "FlinchRadius",
+    "flags",
+    "durations",
+    "unique IDs"
+  ],
+  "environment_scripted_and_npc_only_explosion_offense": "original",
+  "shared_explosion_caveat": "remote_charge and rocket are also used by turret records; no clone or player-only isolation",
+  "vehicles": "V3 semantic values exactly, retaining its separate misc/table scope",
+  "reinforcements_delay_divisor": 2,
+  "reinforcements_scope": [
+    "raid_data",
+    "house_arrest",
+    "guerrilla_reinforcement",
+    "reinforcement_profile",
+    "DLC equivalents when present"
+  ],
+  "timers_factor": 3,
+  "timers_scope": [
+    "Time_To_Complete",
+    "Time_To_Fail",
+    "Par_Time",
+    "demolitions Time_Limit",
+    "Hostage_Kill_Time",
+    "mayhem Time_per_score"
+  ],
+  "courier": "Escape_Speed /3, integer ceiling; other driving modes and kill quotas original",
+  "salvage_rewards_factor": 3,
+  "salvage_rewards_scope": "explicit positive Salvage_Reward fields only",
+  "uncertain_reward_currencies_morale_and_control": "original",
+  "ammo_factor": 5,
+  "ammo_scope": [
+    "Max_Rounds",
+    "Max_Rounds_Upgrade",
+    "Ammo_Box_Restock",
+    "Num_Magazines",
+    "demolitions activity Ammo"
+  ],
+  "ammo_magazine_size_and_difficulty_pickup_multipliers": "original; avoid an extra x5 multiplier",
+  "remote_simultaneously_attached_limit": "original upgrade progression, not ammunition capacity",
+  "purchase_upgrade_cost_divisor": 2,
+  "cost_rounding": "positive Int ceiling, minimum 1; original 0 stays 0",
+  "unlock_and_upgrade_value_flags": "original",
+  "mode_scope": "campaign and suitable offline DLC records; explicit MP/test records and templates original except exact V3 vehicle inheritance",
+  "game_runtime_tested": false,
+  "base_version": "Campaign V4",
+  "player_gun_handling": {
+    "factor": 0.8,
+    "basis": "original",
+    "fields": [
+      "Recoil_Kick",
+      "Spread_Min",
+      "Spread_Max",
+      "Spread_Fine_Aim_Min",
+      "Spread_Fine_Aim_Max"
+    ],
+    "scope": "positive fields of campaign handheld firearms and launchers",
+    "npc_spread_fields": "preserve V4",
+    "notes": "Recoil_Kick is player-only per schema; explicit NPC spreads remain unchanged, runtime fallback is not proven"
+  },
+  "salvage_touch_delay_ms": 250,
+  "salvage_kept_on_death_fraction": 1,
+  "salvage_death_status": "experimental; field description says 1 means all; live death/save behavior not tested",
+  "salvage_pickup_radius": "unchanged: no unambiguous tunable distance/radius located in supplied VPP tables",
+  "preserved_from_v4": [
+    "camera_shake presets",
+    "remote attached limit and upgrades",
+    "vehicle standing/ragdoll thresholds",
+    "all other payloads/fields outside the explicit V4.1 delta"
+  ]
+}

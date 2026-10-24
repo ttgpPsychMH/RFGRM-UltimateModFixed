@@ -5,7 +5,7 @@ liên kết đội quân, xe spawn và điều kiện mở khóa giữ nguyên d
 
 **[Tải V4](../downloads/Ultimate_Mod_Campaign_v4.zip)** ·
 [Báo cáo và mã dựng](../downloads/Ultimate_Mod_Campaign_v4_Reports.zip) ·
-[Hướng dẫn đầy đủ](../downloads/HUONG_DAN.txt) ·
+[Hướng dẫn đầy đủ](../downloads/HUONG_DAN_V4.txt) ·
 [Từng giá trị original → V4](campaign-v4-parameters.csv) ·
 [Kiểm tra](campaign-v4-validation.json) · [Policy](campaign-v4-policy.json).
 

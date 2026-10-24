@@ -1,0 +1,49 @@
+{
+  "version": "Campaign V4.1",
+  "base_version": "Campaign V4",
+  "packages": [
+    {
+      "name": "misc",
+      "file_count": 1208,
+      "bytes": 101462516,
+      "sha256": "5440347d5500aeb430b0bfb042e8d0c4a97fd66aae05e89ba8d1d925b4ad0818",
+      "v4_sha256": "bd2cec4003673b44a1f17c7319986ccc78ea365ad95b11c0a7dffa01735a5982",
+      "changed_parameters_vs_v4": 203,
+      "changed_parameters_vs_original": 1830
+    },
+    {
+      "name": "table",
+      "file_count": 423,
+      "bytes": 22560866,
+      "sha256": "bf8f648e718704e83f5fa8579316ac28e92cacd87358b3b7d117e1552a357590",
+      "v4_sha256": "839985e20922972c70f8d0c8bb9bd6f82e575b1657ab58ecfe582733c3ce867b",
+      "changed_parameters_vs_v4": 203,
+      "changed_parameters_vs_original": 1407
+    }
+  ],
+  "changed_parameters_vs_v4": 406,
+  "changed_parameters_vs_original": 3237,
+  "changes_by_rule": {
+    "hammer_reach_x1_25": 32,
+    "hammer_hit_radius_x1_25": 32,
+    "hammer_default_x5": 32,
+    "hammer_npc_x10": 28,
+    "hammer_structure_x5": 28,
+    "hammer_vehicle_x20": 28,
+    "hammer_impact_force_x1_5": 32,
+    "hammer_ragdoll_impulse_x1_5": 32,
+    "hammer_secondary_reach_x1_25": 32,
+    "salvage_kept_on_death_fraction_1": 4,
+    "salvage_touch_delay_250_ms": 4,
+    "player_weapon_recoil_or_spread_x0_8": 122
+  },
+  "changes_by_file": {
+    "dlc01_melee.xtbl": 120,
+    "dlc01_tweak_table.xtbl": 4,
+    "dlc01_weapons.xtbl": 36,
+    "melee.xtbl": 156,
+    "tweak_table.xtbl": 4,
+    "weapons.xtbl": 86
+  },
+  "game_runtime_tested": false
+}
